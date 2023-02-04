@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0}
+
+		.nav
+		{
+			height: 100px;
+			width:100% ;
+			background: lightcoral;
+			position: relative;
+			
+		}
+		
+		.nav ul
+		{
+			display: flex;
+		}
+		.nav .menu 
+		{
+			height: 50px;
+			width: 100px;
+			margin: 50px;
+			list-style: none;
+		}
+		.nav a
+		{
+			text-decoration: none;
+
+		}
+		.nav .submenu
+		{
+			
+			top: 70px;
+			left: 30px;
+			height: 200px;
+        	width: 300px;
+        	background: black;
+        	transition: .2s;
+        	position: absolute;
+        	visibility: hidden;
+            border: 1px solid white;
+
+		}
+		.submenu li 
+		{
+/*			display: block;*/
+/*			list-style: none;*/
+		}
+		.submenu a
+		{
+/*			text-decoration: none;*/
+
+		}
+		.nav .menu:hover .nav .submenu
+		{
+			visibility: visible;
+			top:80px;
+
+		} 
+		
+	</style>
+</head>
+<body>
+
+	<div class="nav">
+		<ul>
+			<li class="menu">
+				<a href="">Home</a>
+				 <div class="submenu"></div>
+			</li>
+			<li class="menu">
+				<a href="">news</a>
+				   <div class="submenu">
+                             <!-- <ul>
+                                  <li><a href="">All</a></li>
+                                  <li><a href="">Team</a></li>
+                                  <li><a href="">Doctor's profile</a></li>
+                                  <li><a href="">Clients</a></li>
+                                  
+                             </ul> -->
+                          </div>
+			</li>
+			<li class="menu">
+				<a href="">Entertainment</a>
+				     <div class="submenu">
+                             <!-- <ul>
+                                  <li><a href="">All</a></li>
+                                  <li><a href="">Team</a></li>
+                                  <li><a href="">Doctor's profile</a></li>
+                                  
+                             </ul> -->
+                          </div>
+			</li>
+			<li class="menu">
+				<a href="">Business</a>
+				    <div class="submenu"></div>
+			</li>
+		</ul>
+		
+	</div>
+
+</body>
+</html>

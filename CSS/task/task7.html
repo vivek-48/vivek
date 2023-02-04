@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+/*			background: lightcoral;*/
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.main 
+		{
+			height:400px;
+			width: 700px;
+			background: #333333;
+			margin: 100px auto;
+			position: relative;
+			border: 1px solid;
+		}
+		.contact
+		{
+			height: 350px;
+			width: 350px;
+			background: #66CCFF;
+			position: absolute;
+			margin: 30px 0px 0 330px;
+			text-align: center;
+/*		    margin-top:100px ;*/
+		}
+		.main .contact .part1
+		{
+			height: 30px;
+			width: 250px;
+			border: none;
+			margin: 10px;
+			
+
+		}
+		.main .contact .part2
+		{
+			height: 30px;
+			width: 250px;
+			border: none;
+			margin: 10px;
+		}
+		.main .contact .part3
+		{
+			height: 100px;
+			width: 250px;
+			border: none;
+			margin: 10px;
+
+		}
+		.main .contact button
+		{
+			height: 30px;
+			width: 100px;
+			border: 2px solid white;
+			background: transparent;
+			color: blue;
+			font-size: 15px;
+			font-weight: bold;
+		}
+        .main .contact h1
+        {
+        	font-size: 30px;
+        	padding-top: 20px;
+        }
+        .main .contact input
+        {
+        	font-size: 20px;
+        }
+        .main .icon
+        {
+        	height: 300px;
+        	width: 300px;
+/*        	background: lightgray;*/
+        	
+        	text-align: center;
+
+        	position: absolute;
+        	top:15%;
+        	left:8%;
+        	display: flex;
+        	flex-wrap: wrap;
+        }
+
+        .icon .part 
+        {
+/*        	border: 2px solid;*/
+        	height: 120px;
+        	width: 120px;
+        	margin: 15px;
+        	font-size: 15px;
+        	background: white;
+        	box-shadow: 0px 0px 5px 2px white;
+        	padding-top: 25px;
+        	border-radius: 10px;
+        }
+        .icon .part i 
+        {
+        	color: #66CCFF;
+        	font-size: 35px;
+        }
+        .icon .part p 
+        {
+        	font-size: 15px;
+        	
+        }
+        
+        
+      
+	</style>
+</head>
+<body>
+
+ <div class="main">
+  	<div class="contact">
+  		<h1>Contact Us </h1>
+  		<input class="part1" style="font-size: 15px;" type="text" placeholder="enter your name" name=" enter your name"><br>
+  		<input class="part2" style="font-size: 15px;" type="email" placeholder="enter your email" name="">
+  		<input class="part3" type="text" name="">
+  		<br><button>Submit</button>
+    </div>
+
+    <div class="icon"> 
+    	
+
+       <div class="part">
+         	<i class="fa fa-map-marker" aria-hidden="true"></i>
+    		<p>our main office</p>
+    		<p>shop no.28,chandlodiya</p>
+       </div>
+       <div class="part">
+       	    <i class="fa fa-phone" aria-hidden="true"></i>
+       	    <p>phone number</p>
+       	    <p>9106725335</p>
+       </div>
+       <div class="part">
+       	    <i class="fa fa-fax" aria-hidden="true"></i>
+            <p>fax</p>
+            <p>1-254-657-4678</p>
+       </div>
+       <div class="part">
+       	
+       	    <i class="fa fa-envelope" aria-hidden="true"></i>
+       	    <p>email</p>
+       	    <p>ex@gmail.com</p>
+       </div>
+
+
+    </div>
+
+
+  </div>
+
+</body>
+</html>

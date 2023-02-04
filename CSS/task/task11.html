@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0}
+		.main 
+		{
+			height: 500px;
+			width:700px ;
+			background: blueviolet;
+			margin: 50px 0 0 230px;
+			border-radius: 15px;
+			position: relative;
+			
+		}
+		.main .head
+		{
+			height: 70px ;
+			width: 80%;
+/*			background: lightcoral;*/
+			margin: 20px 0 0 70px;
+			display: flex;
+
+		}
+		.head .icon
+		{
+			height: 70px;
+			width: 40%;
+/*			background: lightgreen;*/
+			display: flex;
+			
+		}
+		.head .icon i 
+		{
+			color: white;
+			font-size: 18px;
+			padding: 40px 0 0 0px;
+		}
+		.head .icon p  
+		{
+			color: white;
+			font-size: 18px;
+			padding: 40px 0 0 10px;
+		}
+		.head .text
+		{
+			height: 70px;
+			width: 60%;
+/*			background: lightblue;*/
+			display: flex;		
+		}
+		.head .text li 
+		{
+			list-style: none;
+			display: inline;
+			text-align: center;
+			line-height: 95px;
+			margin: 10px;
+			font-weight: bold;
+			color: white;
+		}
+		.main .payment
+		{
+			height: 430px ;
+			width: 100%;
+			background: lightgrey;
+			border-radius: 15px;
+			display: flex;
+		}
+		.main .money
+		{
+			height: 430px;
+			width: 50%;
+			background: lightcyan;
+			border-radius: 15px;
+		}
+		.main .card
+		{
+			height: 430px;
+			width: 50%;
+			background: lightgoldenrodyellow;
+			border-radius: 15px;
+			position: relative;
+			overflow: hidden;
+		}
+		.main .card .round 
+		{
+			height: 400px;
+			width: 400px;
+/*			background: black;*/
+			position: absolute;
+			top: 50px;
+			right: -150px;
+			border-radius: 50%;
+			border:4px solid #bc74a5 ;
+			z-index: 0;
+		}
+		.main .card .round1
+		{
+			height: 350px;
+			width: 350px;
+			background:linear-gradient(blueviolet,#bc74a5);
+			position: absolute;
+			top: 80px;
+			right: -140px;
+			border-radius: 50%;
+/*			border:4px solid #bc74a5 ;*/
+z-index: 2;
+		}
+		.card .round2
+		{
+			height: 100px;
+			width: 100px;
+			background: linear-gradient(darkblue,#bc74a5);
+			position: absolute;
+			top: 200px;
+			right: 20px;
+			border-radius: 50%;
+			border: 1px solid;
+			z-index: 4;
+		}
+		.card .round3
+		{
+			height: 50px;
+			width: 50px;
+			background:linear-gradient(blueviolet,#bc74a5);
+			position: absolute;
+			top: 225px;
+			right: 45px;
+			border-radius: 50%;
+			border: 1px solid;
+			z-index: 4;
+
+		}
+		.card .round4
+		{
+			height: 100px;
+			width: 100px;
+			background: linear-gradient(darkblue,#bc74a5);
+			position: absolute;
+			top: 310px;
+			right: 130px;
+			border-radius: 50%;
+            z-index: 1;
+            box-shadow: 5px solid #bc74a5 ;
+            filter: blur(10px);
+		}
+        .card .circle
+        {
+        	height: 130px;
+        	width: 220px;
+        	background: rgba(100, 100, 100, .30);
+        	position: absolute;
+        	top:250px;
+        	right: 80px;
+        	z-index: 3;
+        	border-radius: 10px;
+        	transform: rotate(335deg);
+        	backdrop-filter:  blur(9px);
+        }
+        .card .circle .icon
+        {
+        	height: 30px ;
+        	width: 100%;
+/*        	background: blueviolet;*/
+        	text-align: center;
+        	line-height: 40px;
+        	border-radius: 10px;
+        }
+         .card .circle .icon .fa-id-card-o
+         {
+         	font-size: 22px;
+         	margin-right: 130px;
+         	color: white;
+         }
+         .card .circle .icon .fa-cc-visa
+         {
+         	font-size: 28px;
+/*         	margin-right: 150px;*/
+            color: white;
+         }
+         .card .circle p 
+         {
+         	font-size: 20px;
+         	color: white;
+         	margin:20px 0 0 10px ;
+
+         }
+         .card .circle .sarah
+         {
+         	height: 50px;
+         	width: 100%;
+/*         	background: lightblue;*/
+         	margin: 10px 0 0 0;
+         	border-radius: 10px;
+         	display: flex;
+         }
+         .circle .sarah .gold
+         {
+         	height: 50px;
+         	width: 50%;
+/*         	background: blueviolet;*/
+         }
+          .circle .sarah .gold p 
+          {
+          	font-size: 11px;
+          	margin:10px 0 10px 10px;
+          }
+           .circle .sarah .gold span 
+          {
+          	font-size: 18px;
+          	margin:0 0 20px 0;
+          	font-weight: bold;
+          }
+          .circle .sarah .Date
+         {
+         	height: 50px;
+         	width: 50%;
+/*         	background: lightcyan;*/
+         }
+          .circle .sarah .Date p 
+          {
+          	font-size: 15px;
+          	color: white;
+          	margin: 10px 40px 0 40px;
+      
+          }
+           .circle .sarah .Date span 
+          {
+          	font-size: 14px;
+          	margin:0 0 0px 0;          
+          	color: white;
+          	padding:0 0 0 30px ;
+          }
+
+
+
+          .card .circle1
+        {
+        	height: 140px;
+        	width: 250px;
+        	background: rgba(100, 100, 100, .30);
+        	position: absolute;
+        	top:100px;
+        	right: 70px;
+        	z-index: 3;
+        	border-radius: 10px;
+        	transform: rotate(10deg);
+        	backdrop-filter:  blur(9px);
+        	z-index: 5;
+        }
+        .card .circle1 .icon
+        {
+        	height: 30px ;
+        	width: 100%;
+/*        	background: blueviolet;*/
+        	text-align: center;
+        	line-height: 40px;
+        	border-radius: 10px;
+        }
+         .card .circle1 .icon .fa-id-card-o
+         {
+         	font-size: 22px;
+         	margin-right: 130px;
+         	color: white;
+         }
+         .card .circle1 .icon .fa-cc-visa
+         {
+         	font-size: 28px;
+/*         	margin-right: 150px;*/
+            color: white;
+         }
+         .card .circle1 p 
+         {
+         	font-size: 20px;
+         	color: white;
+         	margin:20px 0 0 10px ;
+
+         }
+         .card .circle1 .sarah
+         {
+         	height: 50px;
+         	width: 100%;
+/*         	background: lightblue;*/
+         	margin: 10px 0 0 0;
+         	border-radius: 10px;
+         	display: flex;
+         }
+         .circle1 .sarah .gold
+         {
+         	height: 50px;
+         	width: 50%;
+/*         	background: blueviolet;*/
+         }
+          .circle1 .sarah .gold p 
+          {
+          	font-size: 11px;
+          	margin:10px 0 10px 10px;
+          }
+           .circle1 .sarah .gold span 
+          {
+          	font-size: 18px;
+          	margin:0 0 20px 0;
+          	font-weight: bold;
+          }
+          .circle1 .sarah .Date
+         {
+         	height: 50px;
+         	width: 50%;
+/*         	background: lightcyan;*/
+         }
+          .circle1 .sarah .Date p 
+          {
+          	font-size: 15px;
+          	color: white;
+          	margin: 10px 40px 0 40px;
+      
+          }
+           .circle1 .sarah .Date span 
+          {
+          	font-size: 14px;
+          	margin:0 0 0px 0;          
+          	color: white;
+          	padding:0 0 0 30px ;
+          }
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="head">
+			<div class="icon">
+			    <i class="fa fa-globe" aria-hidden="true"></i>
+			    <p>Cashfly</p>
+			</div>
+			<div class="text">
+				<ul>
+                     <li>About</li>
+                     <li>Product</li>
+                     <li>Pricing</li>
+                     <li>Sign Up</li>
+				</ul>
+			</div>
+		</div>
+      
+
+      <div class="payment">
+        <div class="money">
+        	
+        </div>
+
+        <div class="card">
+        	<div class="round"></div>
+        	<div class="round1"></div>
+        	<div class="round2"></div>
+        	<div class="round3"></div>
+        	<div class="round4"></div>
+        	<div class="circle">
+        		<div class="icon">
+        			<i class="fa fa-id-card-o" aria-hidden="true"></i>
+        			<i class="fa fa-cc-visa" aria-hidden="true"></i>
+        		</div>
+
+        		<p>3516 8643 8756 9876</p>
+
+        		<div class="sarah">
+        			<div class="gold">
+        				<p>CARD HOLDER<br><span>Sarah Gold</span></p>
+        			</div>
+        			<div class="Date">
+        				<p>EXPIRES<br><span>09/24</span></p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        	<div class="circle1">
+        		<div class="icon">
+        			<i class="fa fa-id-card-o" aria-hidden="true"></i>
+        			<i class="fa fa-cc-visa" aria-hidden="true"></i>
+        		</div>
+
+        		<p>3516 8643 8756 9876</p>
+
+        		<div class="sarah">
+        			<div class="gold">
+        				<p>CARD HOLDER<br><span>Joseuh Cash</span></p>
+        			</div>
+        			<div class="Date">
+        				<p>EXPIRES<br><span>09/24</span></p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </div>
+	  </div>
+	</div>
+
+</body>
+</html>

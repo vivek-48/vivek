@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>table</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.main
+		{
+			height: 600px;
+			width: 1100px;
+/*			background: gray;*/
+			margin: 100px auto;
+			box-shadow: 0 0 50px gray;
+		}
+		.main .header
+		{
+			height: 50px;
+			width: 100%;
+			background: lightcoral;
+			text-align: right;
+			line-height: 50px;
+/*			display: flex;*/
+			padding-right: 20px;
+			background: linear-gradient(to right, blue,purple,red);
+		}
+		.main .header li
+		{
+			list-style: none;
+			display: inline-block;
+/*			margin-right: 20px;*/
+/*			border: 2px solid red;*/
+			height: 50px;
+			width: 100px;
+			text-align: center;
+		}
+		.main .header li a
+		{
+			text-decoration: none;
+			color: white;
+			font-family: sans-serif;
+		}
+		.main .content
+		{
+			height: 550px;
+			width: 100%;
+/*			background: lightblue;*/
+			position: relative;
+
+		}
+		.main .content .info
+		{
+			height: 400px;
+			width: 50%;
+			background: white;
+			position: absolute;
+			top: 50px;
+			left: 500px;
+			border-radius: 30px;
+			box-shadow: 10px 10px 30px gray;
+			padding-left: 20px;
+		}
+		input
+		{
+			height: 30px;
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid gray;
+		}
+		table
+		{
+			height: 400px;
+			width: 100%;
+		}
+		.contact
+		{
+			font-size: 36px;
+			font-family: sans-serif;
+			font-weight: 500;
+		}
+		.fa-user-circle,.fa-phone,.fa-envelope,.fa-comment
+		{
+			font-size: 24px;
+		}
+		button
+		{
+			height: 36px;
+			width: 50%;
+			border: none;
+			border-radius: 15px;
+			color: white;
+			background: linear-gradient(to right, blue,purple,red);
+		}
+		.main .header li .effect
+		{
+			background: rgba(0, 0, 0, 0.2);
+			display: block;
+		}
+		.main .content .icon
+		{
+			height: 500px;
+			width: 500px;
+/*			background: gray;*/
+			position: absolute;
+			top: 50px;
+			left: 50px;
+			text-align: center;
+			line-height: 400px;
+		}
+		.main .content .icon .fa-phone
+		{
+			font-size: 144px;
+			color: mediumpurple;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<ul>
+				<li><a href="">Story</a></li>
+				<li><a href="">Product</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">Portfolio</a></li>
+				<li><a href="">Events</a></li>
+				<li><a href=""><span class="effect">Contact Us</span></a></li>
+				<li><a href="">About</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="icon"><i class="fa fa-phone"></i></div>
+			<div class="info">
+				<table border="0">
+					<tr>
+						<th colspan="4"><span class="contact">Contact Us</span></th>
+						<!-- <td></td>
+						<td></td>
+						<td></td> -->
+					</tr>
+
+					<tr>
+						<td><i class="fa fa-user-circle"></i></td>
+						<td colspan="3"><input type="text" placeholder="Full Name"></td>
+					</tr>
+
+					<tr>
+						<td><i class="fa fa-phone"></i></td>
+						<td><input type="text" placeholder="Contact No"></td>
+						<td><i class="fa fa-envelope"></i></td>
+						<td><input type="text" placeholder="Email ID"></td>
+					</tr>
+
+					<tr>
+						<td><i class="fa fa-comment"></i></td>
+						<td colspan="3"><input type="text" placeholder="Message"></td>
+					</tr>
+
+					<tr>
+						<th colspan="4">
+							<button>SUBMIT</button>
+						</th>
+						
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

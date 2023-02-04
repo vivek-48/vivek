@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*
+		{box-sizing:  border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.main
+		{
+			height:500px;
+			width: 1150px;
+			background: white;
+			margin: 50px auto;
+			display: flex;
+			border: 2px solid black;
+		}
+		.main .part1
+		{
+			height: 400px;
+			width: 220px;
+/*			background: lightblue;*/
+			margin: 30px;
+			border-radius: 10px;
+			position: relative;
+
+		}
+		.main .part1 .dress
+		{
+			height: 340px;
+			width: 220px;
+/*			background: lightpink;*/
+			margin: 0 0 20px 0;
+			border-radius: 10px;
+/*			display: flex;*/
+            box-shadow: 0 0 5px grey;
+		}
+		.main .part1 .dress img
+		{
+			border-radius: 10px;
+		}
+		.main .part1 .dress .head
+		{
+			height: 30px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			position: absolute;
+			top: 10px;
+			left: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px 0 10px;
+		}
+		 .head .text p
+		{
+			color: white;
+			padding: 5px 20px;
+			background: red;
+			border-radius: 20px;
+
+			
+			
+		}
+		 .dress .head .icon
+		{
+          height: 30px;
+			width: 30px;
+			background: white;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+          
+
+		}
+		.dress .girl
+		{
+			height: 50px;
+			width: 220px;
+/*			background: lightgreen;*/
+			display: flex;
+			margin: 0px;
+		}
+		.dress .girl .txt p 
+		{
+			font-size: 18px;
+			padding-left: 5px;
+			color: black;
+			font-family: none;
+
+		}
+		.dress .girl p 
+		{
+			font-size: 22px;
+			color: red;
+			font-weight: bold;
+			padding-right: 5px;
+		}
+		.dress .girl span
+		{
+			font-size: 13px;
+			display: inline;
+			color: grey;
+			padding-left: 18px;
+		}
+		.dress .circle 
+		{
+			height: 35px;
+			width: 220px;
+/*			background: lightskyblue;*/
+			display: flex;
+		}
+		.circle .round
+		{
+			height: 35px;
+			width: 110px;
+/*			background: lightsalmon;*/
+			display: flex;
+			padding-left: 5px;
+		}
+		.circle .round .round1
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid grey;
+		}
+		.circle .round .round2
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid red;
+		}
+		.circle .round .round3
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid skyblue;
+		}
+
+		.circle .trt
+		{
+			height: 35px;
+			width: 110px;
+/*			background: lightcyan;*/
+			display: flex;
+			text-align: center;
+			padding-left: 9px;
+		}
+		.circle .trt .trt1
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.circle .trt .trt2
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.circle .trt .trt3
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.dress .star
+		{
+			height: 25px;
+			width: 220px;
+/*			background: lightsalmon;*/
+			display: flex;
+			text-align: center;
+/*			line-height: 5px;*/
+            justify-content: space-between;
+		}
+		.star .ic i
+         {
+         	color: grey;
+         	padding-left: 10px;
+         }
+         .star .ic span
+         {
+         	color: grey;
+         	padding-left: 5px;
+         }
+         .star .by
+         {
+         	font-size: 22px;
+         	color:#990099;
+         	padding-right: 10px;
+         }
+
+		.main .part1 .data
+		{
+			height: 40px;
+			width: 220px;
+/*			background: lightsalmon;*/
+			border-radius: 10px;
+			display: flex;
+			text-align: center;
+			line-height:20px;
+			border-radius: 10px;
+			box-shadow: 0 0 5px grey;
+		}
+		.part1 .data .wh 
+		{
+            height: 40px;
+            width: 110px;
+/*            background: lightcoral;*/
+            border-radius: 10px;
+		}
+		.part1 .data .wh p 
+		{
+			font-size: 12px;
+			color: grey;
+		}
+		.part1 .data .wh span  
+		{
+			font-size: 15px;
+			color: red;
+			font-weight: bold;
+		}
+		.part1 .data .pi 
+		{
+			height: 40px;
+            width: 110px;
+            background: #8B008B;
+            border-radius: 0 10px 10px 0;
+		}
+		.part1 .data .pi p 
+		{
+			font-size: 20px;
+			color: white;
+		}
+		.part1 .data .pi span 
+		{
+			font-size: 20px;
+			color: white;
+		}
+
+
+		/*.main .part2
+		{
+			height: 400px;
+			width: 220px;
+			background: lightcyan;
+			margin: 30px;
+		}*/
+        .main .part2
+		{
+			height: 400px;
+			width: 220px;
+/*			background: lightblue;*/
+			margin: 30px;
+			border-radius: 10px;
+			position: relative;
+
+		}
+		.main .part2 .dress
+		{
+			height: 340px;
+			width: 220px;
+/*			background: lightpink;*/
+			margin: 0 0 20px 0;
+			border-radius: 10px;
+/*			display: flex;*/
+box-shadow: 0 0 5px grey;
+		}
+		.main .part2 .dress img
+		{
+			border-radius: 10px;
+		}
+		.main .part2 .dress .head
+		{
+				height: 30px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			position: absolute;
+			top: 10px;
+			left: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px 0 10px;
+		}
+		 .dress .head .num
+		{
+			color: white;
+			padding: 5px 20px;
+			background: red;
+			border-radius: 20px;
+						
+			
+		}
+		 .dress .head .heart
+		{
+			height: 30px;
+			width: 30px;
+			background: white;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+		}
+		.dress .girl
+		{
+			height: 50px;
+			width: 220px;
+/*			background: lightgreen;*/
+			display: flex;
+			margin: 0px;
+		}
+		.dress .girl .txt p 
+		{
+			font-size: 18px;
+			padding-left: 5px;
+			color: black;
+			font-family: none;
+
+
+		}
+		.dress .girl p 
+		{
+			font-size: 22px;
+			color: red;
+			font-weight: bold;
+			padding-right: 5px;
+		}
+		.dress .girl span
+		{
+			font-size: 13px;
+			display: inline;
+			color: grey;
+			padding-left: 18px;
+		}
+		.dress .circle 
+		{
+			height: 35px;
+			width: 220px;
+/*			background: lightskyblue;*/
+			display: flex;
+		}
+		.circle .round
+		{
+			height: 35px;
+			width: 110px;
+/*			background: lightsalmon;*/
+			display: flex;
+			padding-left: 5px;
+		}
+		.circle .round .round1
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid grey;
+		}
+		.circle .round .bl
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid blue;
+		}
+/*		.circle .round .round3
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+			background: peru;
+			margin: 2px;
+			border: 3px solid skyblue;
+		}*/
+
+		.circle .trt
+		{
+			height: 35px;
+			width: 110px;
+/*			background: lightcyan;*/
+			display: flex;
+			text-align: center;
+			padding-left: 9px;
+		}
+		.circle .trt .trt1
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.circle .trt .trt2
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.circle .trt .trt3
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.dress .star
+		{
+			height: 25px;
+			width: 220px;
+/*			background: lightsalmon;*/
+			display: flex;
+			text-align: center;
+/*			line-height: 5px;*/
+            justify-content: space-between;
+		}
+		.star .ic i
+         {
+         	color: grey;
+         	padding-left: 10px;
+         }
+         .star .ic span
+         {
+         	color: grey;
+         	padding-left: 5px;
+         }
+         .star .by
+         {
+         	font-size: 22px;
+         	color:#990099;
+         	padding-right: 10px;
+         }
+
+		.main .part2 .data
+		{
+			height: 40px;
+			width: 220px;
+/*			background: lightsalmon;*/
+			border-radius: 10px;
+			display: flex;
+			text-align: center;
+			line-height:20px;
+			border-radius: 10px;
+			box-shadow: 0 0 5px grey;
+		}
+		.part2 .data .wh 
+		{
+            height: 40px;
+            width: 110px;
+/*            background: lightcoral;*/
+            border-radius: 10px;
+		}
+		.part2 .data .wh p 
+		{
+			font-size: 12px;
+			color: grey;
+		}
+		.part2 .data .wh span  
+		{
+			font-size: 15px;
+			color: red;
+			font-weight: bold;
+		}
+		.part2 .data .pi 
+		{
+			height: 40px;
+            width: 110px;
+            background: #8B008B;
+            border-radius: 0 10px 10px 0;
+		}
+		.part2 .data .pi p 
+		{
+			font-size: 20px;
+			color: white;
+		}
+		.part2 .data .pi span 
+		{
+			font-size: 20px;
+			color: white;
+		}
+
+
+		/*.main .part3
+		{
+			height: 400px;
+			width: 220px;
+			background: lightgreen;
+			margin: 30px;
+		}*/
+
+		.main .part3
+		{
+			height: 400px;
+			width: 220px;
+/*			background: lightblue;*/
+			margin: 30px;
+			border-radius: 10px;
+			position: relative;
+
+		}
+		.main .part3 .dress
+		{
+			height: 340px;
+			width: 220px;
+/*			background: lightpink;*/
+			margin: 0 0 20px 0;
+			border-radius: 10px;
+/*			display: flex;*/
+box-shadow: 0 0 5px grey;
+		}
+		.main .part3 .dress img
+		{
+			border-radius: 10px;
+		}
+		.main .part3 .dress .head
+		{
+			height: 30px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			position: absolute;
+			top: 10px;
+			left: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px 0 10px;
+		}
+		 .dress .head .num
+		{
+			color: white;
+			padding: 5px 20px;
+			background: red;
+			border-radius: 20px;
+			
+			
+		}
+		 .dress .head .heart
+		{
+			height: 30px;
+			width: 30px;
+			background: white;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+		}
+		.dress .girl
+		{
+			height: 50px;
+			width: 220px;
+/*			background: lightgreen;*/
+			display: flex;
+			margin: 0px;
+		}
+		.dress .girl .txt p
+		{
+			font-size: 18px;
+			padding-left: 5px;
+			color: black;
+			font-family: none;
+
+
+		}
+		.dress .girl p 
+		{
+			font-size: 22px;
+			color: red;
+			font-weight: bold;
+			padding-right: 5px;
+		}
+		.dress .girl span
+		{
+			font-size: 13px;
+			display: inline;
+			color: grey;
+			padding-left: 18px;
+		}
+		.dress .circle 
+		{
+			height: 35px;
+			width: 220px;
+/*			background: lightskyblue;*/
+			display: flex;
+		}
+		.circle .round
+		{
+			height: 35px;
+			width: 110px;
+/*			background: lightsalmon;*/
+			display: flex;
+			padding-left: 5px;
+		}
+		.circle .round .round1
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid grey;
+		}
+		.circle .round .yl
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid yellow;
+		}
+		.circle .round .sb
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid skyblue;
+		}
+
+		.circle .trt
+		{
+			height: 35px;
+			width: 110px;
+/*			background: lightcyan;*/
+			display: flex;
+			text-align: center;
+			padding-left: 9px;
+		}
+		.circle .trt .trt1
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.circle .trt .trt2
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.circle .trt .trt3
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.dress .star
+		{
+			height: 25px;
+			width: 220px;
+/*			background: lightsalmon;*/
+			display: flex;
+			text-align: center;
+/*			line-height: 5px;*/
+            justify-content: space-between;
+		}
+		.star .ic i
+         {
+         	color: grey;
+         	padding-left: 10px;
+         }
+         .star .ic span
+         {
+         	color: grey;
+         	padding-left: 5px;
+         }
+         .star .by
+         {
+         	font-size: 22px;
+         	color:#990099;
+         	padding-right: 10px;
+         }
+
+		.main .part3 .data
+		{
+			height: 40px;
+			width: 220px;
+/*			background: lightsalmon;*/
+			border-radius: 10px;
+			display: flex;
+			text-align: center;
+			line-height:20px;
+			border-radius: 10px;
+			box-shadow: 0 0 5px grey;
+		}
+		.part3 .data .wh 
+		{
+            height: 40px;
+            width: 110px;
+/*            background: lightcoral;*/
+            border-radius: 10px;
+		}
+		.part3 .data .wh p 
+		{
+			font-size: 12px;
+			color: grey;
+		}
+		.part3 .data .wh span  
+		{
+			font-size: 18px;
+			color: red;
+			font-weight: bold;
+		}
+		.part3 .data .pi 
+		{
+			height: 40px;
+            width: 110px;
+            background: #8B008B;
+            border-radius: 0 10px 10px 0;
+		}
+		.part3 .data .pi p 
+		{
+			font-size: 20px;
+			color: white;
+		}
+		.part3 .data .pi span 
+		{
+			font-size: 20px;
+			color: white;
+		}
+
+
+		/*.main .part4
+		{
+			height: 400px;
+			width: 220px;
+			background: lightcoral;
+			margin: 30px;
+		}*/
+
+		.main .part4
+		{
+			height: 400px;
+			width: 220px;
+/*			background: lightblue;*/
+			margin: 30px;
+			border-radius: 10px;
+			position: relative;
+
+		}
+		.main .part4 .dress
+		{
+			height: 340px;
+			width: 220px;
+/*			background: lightpink;*/
+			margin: 0 0 20px 0;
+			border-radius: 10px;
+/*			display: flex;*/
+            box-shadow: 0 0 5px grey;
+		}
+		.main .part4 .dress img
+		{
+			border-radius: 10px;
+		}
+		.main .part4 .dress .head
+		{
+			height: 30px;
+			width: 100%;
+/*			border: 2px solid red;*/
+			position: absolute;
+			top: 10px;
+			left: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 10px 0 10px;
+		}
+		 .dress .head .num
+		{
+			color: white;
+			padding: 5px 20px;
+			background: red;
+			border-radius: 20px;
+			
+			
+		}
+		 .dress .head .heart
+		{
+			height: 30px;
+			width: 30px;
+			background: white;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+
+		}
+		.dress .girl
+		{
+			height: 50px;
+			width: 220px;
+/*			background: lightgreen;*/
+			display: flex;
+			margin: 0px;
+			justify-content: space-between;
+		}
+		.dress .girl .txt p
+		{
+			font-size: 18px;
+			padding-left: 5px;
+			color: black;
+			font-family: none;
+
+		}
+		.dress .girl p 
+		{
+			font-size: 22px;
+			color: red;
+			font-weight: bold;
+			padding-right: 5px;
+		}
+		.dress .girl span
+		{
+			font-size: 13px;
+			display: inline;
+			color: grey;
+			padding-left: 18px;
+		}
+		.dress .circle 
+		{
+			height: 35px;
+			width: 220px;
+/*			background: lightskyblue;*/
+			display: flex;
+		}
+		.circle .round
+		{
+			height: 35px;
+			width: 110px;
+/*			background: lightsalmon;*/
+			display: flex;
+			padding-left: 5px;
+		}
+		.circle .round .round1
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid grey;
+		}
+		.circle .round .round2
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid red;
+		}
+		.circle .round .round3
+		{
+			height: 25px;
+			width: 25px;
+			border-radius: 50%;
+/*			background: peru;*/
+			margin: 2px;
+			border: 3px solid skyblue;
+		}
+
+		.circle .trt
+		{
+			height: 35px;
+			width: 110px;
+/*			background: lightcyan;*/
+			display: flex;
+			text-align: center;
+			padding-left: 9px;
+		}
+		.circle .trt .trt1
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.circle .trt .trt2
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.circle .trt .trt3
+		{
+			height: 25px;
+			width: 25px;
+/*			background: lightpink;*/
+			border-radius: 50%;
+			margin: 2px;
+			border: 1px solid grey;
+			font-size: 15px;
+			color: grey;
+		}
+		.dress .star
+		{
+			height: 25px;
+			width: 220px;
+/*			background: lightsalmon;*/
+			display: flex;
+			text-align: center;
+/*			line-height: 5px;*/
+            justify-content: space-between;
+		}
+		.star .ic i
+         {
+         	color: grey;
+         	padding-left: 10px;
+         }
+         .star .ic span
+         {
+         	color: grey;
+         	padding-left: 5px;
+         }
+         .star .by
+         {
+         	font-size: 22px;
+         	color:#990099;
+         	padding-right: 10px;
+         }
+
+		.main .part4 .data
+		{
+			height: 40px;
+			width: 220px;
+/*			background: lightsalmon;*/
+			border-radius: 10px;
+			display: flex;
+			text-align: center;
+			line-height:20px;
+			border-radius: 10px;
+			box-shadow: 0 0 5px grey;
+		}
+		.part4 .data .wh 
+		{
+            height: 40px;
+            width: 110px;
+/*            background: lightcoral;*/
+            border-radius: 10px;
+		}
+		.part4 .data .wh p 
+		{
+			font-size: 12px;
+			color: grey;
+		}
+		.part4 .data .wh span  
+		{
+			font-size: 13px;
+			font-weight: bold;
+			color: red;
+		}
+		.part4 .data .pi 
+		{
+			height: 40px;
+            width: 110px;
+            background: #8B008B;
+            border-radius: 0 10px 10px 0;
+		}
+		.part4 .data .pi p 
+		{
+			font-size: 20px;
+			color: white;
+		}
+		.part4 .data .pi span 
+		{
+			font-size: 20px;
+			color: white;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="main">
+
+
+		<div class="part1">
+
+			<div class="dress">
+				<img src="https://img.faballey.com/images/Product/ITN02250Z/1.jpg" height="220px" width="220px" >
+				<div class="head">
+					<div class="text">
+						<p>-25%</p>
+					</div>
+					<div class="icon">
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
+					</div>
+
+
+				</div>
+                
+                <div class="girl">
+                	<div class="txt"><p>White traditional long dress</p></div>
+                	
+                	<div class="dlr"><p>$3.99</p><span>$5.99</span></div>
+                </div>
+                
+                <div class="circle">
+                	<div class="round">
+                		<div class="round1"></div>
+                		<div class="round2"></div>
+                		<div class="round3"></div>
+                	</div>
+                	
+                	<div class="trt">
+                		<div class="trt1">S</div>
+                		<div class="trt2">M</div>
+                		<div class="trt3">L</div>
+                	</div>
+            </div>
+ 
+                 <div class="star">
+                 	<div class="ic">
+                 		<i class="fa fa-star-o" aria-hidden="true"></i>
+                 		<span>4.8</span>
+                 	</div>
+                 	<div class="by">BUY +</div>
+                 </div>
+			
+
+		</div>
+			
+
+			     <div class="data">
+				     <div class="wh">
+					     <p> Monday Happy</p>
+				       	 <span>#MONHPY</span>
+				     </div>
+				     <div class="pi">
+					     <p> 20% </p>
+					     <span>off</span>
+				     </div>
+
+			     </div>
+
+	</div>
+
+
+
+
+		<div class="part2">
+			
+                  <div class="dress">
+				<img src="https://m.media-amazon.com/images/I/41lr0TH5u6L.jpg" height="220px" width="220px" >
+				<div class="head">
+					<div class="num">-25%</div>
+					
+					<div class="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+				</div>
+                
+                <div class="girl">
+                	<div class="txt"><p>Long sleeve denim jacket</p></div>
+                	
+                	<div class="dlr"><p>$3.99</p><span>$5.99</span></div>
+                </div>
+                
+                <div class="circle">
+                	<div class="round">
+                		<div class="round1"></div>
+                		<div class="bl"></div>
+                	</div>
+                	
+                	<div class="trt">
+                		<div class="trt1">S</div>
+                		<div class="trt2">M</div>
+                		<div class="trt3">L</div>
+                	</div>
+            </div>
+ 
+                 <div class="star">
+                 	<div class="ic">
+                 		<i class="fa fa-star-o" aria-hidden="true"></i>
+                 		<span>4.8</span>
+                 	</div>
+                 	<div class="by">BUY +</div>
+                 </div>
+			
+
+		</div>
+			
+
+			     <div class="data">
+				     <div class="wh">
+					     <p> payday surprise</p>
+				       	 <span>#SRPSPYDY</span>
+				     </div>
+				     <div class="pi">
+					     <p> 20% </p>
+					     <span>off</span>
+				     </div>
+
+			     </div>
+
+
+
+
+
+
+		</div>
+		<div class="part3">
+			
+			 <div class="dress">
+				<img src="https://www.hushpuppies.com/on/demandware.static/-/Sites-hushpuppies_us-Library/default/dw97b3f124/content/seasonal-content/landing-pages/womens/2022/11/product-w-soft-style.jpg" height="220px" width="220px" >
+				<div class="head">
+					<div class="num">-25%</div>
+					
+					<div class="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+				</div>
+                
+                <div class="girl">
+                	<div class="txt"><p>Hush puppies</p></div>
+                	
+                	<div class="dlr"><p>$3.99</p><span>$5.99</span></div>
+                </div>
+                
+                <div class="circle">
+                	<div class="round">
+                		<div class="round1"></div>
+                		<div class="yl"></div>
+                		<div class="sb"></div>
+                	</div>
+                	
+                	<div class="trt">
+                		<div class="trt1">S</div>
+                		<div class="trt2">M</div>
+                		<div class="trt3">L</div>
+                	</div>
+            </div>
+ 
+                 <div class="star">
+                 	<div class="ic">
+                 		<i class="fa fa-star-o" aria-hidden="true"></i>
+                 		<span>4.2</span>
+                 	</div>
+                 	<div class="by">BUY +</div>
+                 </div>
+			
+
+		</div>
+			
+
+			     <div class="data">
+				     <div class="wh">
+					     <p> first order</p>
+				       	 <span>#HPYFRST</span>
+				     </div>
+				     <div class="pi">
+					     <p> 20% </p>
+					     <span>off</span>
+				     </div>
+
+			     </div>
+
+
+
+		</div>
+		<div class="part4">
+			
+			 <div class="dress">
+				<img src="https://img.faballey.com/images/combo/SET00423/d3.jpg" height="220px" width="220px" >
+				<div class="head">
+					<div class="num">-25%</div>
+					
+					<div class="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+				</div>
+                
+                <div class="girl">
+                	<div class="txt"><p>Athens skirt</p></div>
+                	
+                	<div class="dlr"><p>$3.99</p><span>$5.99</span></div>
+                </div>
+                
+                <div class="circle">
+                	<div class="round">
+                		<div class="round1"></div>
+                		<div class="round2"></div>
+                		<div class="round3"></div>
+                	</div>
+                	
+                	<div class="trt">
+                		<div class="trt1">S</div>
+                		<div class="trt2">M</div>
+                		<div class="trt3">L</div>
+                	</div>
+            </div>
+ 
+                 <div class="star">
+                 	<div class="ic">
+                 		<i class="fa fa-star-o" aria-hidden="true"></i>
+                 		<span>3.8</span>
+                 	</div>
+                 	<div class="by">BUY +</div>
+                 </div>
+			
+
+		</div>
+			
+
+			     <div class="data">
+				     <div class="wh">
+					     <p>vegeterian food</p>
+				       	 <span>#VEGANLOVE</span>
+				     </div>
+				     <div class="pi">
+					     <p> 20% </p>
+					     <span>off</span>
+				     </div>
+
+			     </div>
+
+
+
+
+		</div>
+
+		
+
+
+
+
+
+
+	</div>
+
+</body>
+</html>
