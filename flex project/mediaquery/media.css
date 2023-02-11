@@ -1,0 +1,113 @@
+@media(max-width:500px)
+{
+	.header .logo{height: 70px;width: 100%}
+	.header .logo img{height: 50px; width: 50%}
+	.header .text{display: none;}
+	.nav{display: none;}
+	.main .care{left: 30px;height: 200px;width: 400px;}
+	.main img{color: rgb(238,238,238);}
+	.care h2{font-size: 30px;padding: 0;word-spacing: 0;margin: 0;color:#f78da7; }
+	.care h1{font-size: 50px;word-spacing: 0;letter-spacing: 0;}
+	.main .dental{flex-wrap:wrap;height: 300px;width: 400px;top: 300px;}
+	.color .blue{width: 400px;height: 450px}
+	.color .blue img{padding-top: 20px}
+    .color .blue span{padding-left: 80px;}
+    .color .white{top: 420px;height: 800px;width: 450px;right: 0px}
+    .color .white h1{font-size: 30px;margin: 40px 0 0 40px}
+    .white .chair{height: 800px;width: 430px;flex-wrap: wrap;margin: 20px 0 10px 15px;box-shadow: 0 0 5px grey;}
+    .white .chair .icon{height: 400px;width: 450px}
+    .white .chair .icon img{height: 400px;width: 420px}
+    .white .chair .inp{height: 450px;width: 450px}
+    .inp input{height: 40px;width: 350px;border-radius: 0;margin: 20px 0 0px 40px;box-shadow: 0 0 5px grey;}
+    .inp select{height: 40px;width: 350px;border-radius: 0;margin: 20px 0 0px 40px;box-shadow: 0 0 5px grey;}
+    .inp button{height: 40px;width: 350px;border-radius: 0;margin: 20px 0 0px 40px;box-shadow: 0 0 5px grey;}
+    .excellence{height: 1300px;width: 450px;margin: 800px 0 0 0 }
+    .excellence .view{height: 250px;width: 100%}
+    .excellence button{margin: 0 0 0 60px}
+    .excellence .service{height:1700px;width:400px;flex-wrap:wrap;margin:20px 0 0 20px }
+    .excellence .service .service1{height: 400px;width: 400px;margin: 20px 0 0 0;border: none;}
+    .service1 p {font-size: 16px;margin: 5px 0 0px -10px}
+    .denti{margin: 700px 0 0 0;height:600px;width:100% }
+    .denti img{height: 600px;width: 100%;}
+    .denti .speci{height: 400px;width: 80%;top: 100px}
+    .speci h1{margin: -20px 0 0 0}
+    .speci span{font-size: 20px}
+    .speci p{font-size: 18px;padding: 20px}
+    .speci img{height: 100px;width: 150px;left: 100px;background: transparent;}
+    .team{height: 2600px;}
+    .team .teeth{height: 600px;width: 90%}
+    .teeth img{height: 270px;width: 100%}
+    .team .icon2{margin: 25px}
+    .team .teeth1{height: 620px;width: 90%;top: 600px;left: 20px}
+    .teeth1 img{height: 270px;width: 100%}
+    .team .icon3{margin: 23px}
+    .team .teeth2{height: 620px;width: 90%;top: 1240px;left: 20px}
+    .teeth2 img{height: 270px;width: 100%}
+    .team .icon4{margin: 23px}
+    .team .teeth3{height: 620px;width: 90%;top: 1880px;left: 20px}
+    .teeth3 img{height: 270px;width: 100%}
+    .team .icon5{margin: 23px}
+
+    .details{height: 1350px;width: 100%}
+    .details .Book{height: 800px;width: 90%;right: 20px;flex-wrap: wrap;}
+    .details input{height: 40px;width: 350px;border-radius: 5px;margin: 0px 0 0px 10px;box-shadow: 0 0 5px grey;}
+    .details select{height: 40px;width: 350px;border-radius: 5px;margin: 0px 0 0px 10px;box-shadow: 0 0 5px grey;}
+    .Book p{margin: 5px 0 0 20px}
+    .details .Book button{padding:40px 0 -200px 0 }
+    .details img{top: 850px;left:50px;height: 450px;width: 100%}
+    .details .Book .input{height: 500px;margin: 30px 0 0 0}
+    .details .Book .input .detail{display: inline;}
+    .input .detail .your input {width: 350px;height: 50px;margin: 0 0 0 20px}
+    .details .Book .input .detail1{display: inline;}
+    .input .detail1 .select select{width: 350px;height: 50px;margin: 0 0 0 20px}
+    .input .detail1 .your input {width: 350px;height: 50px;margin: 0 0 0 20px}
+    .details .Book .input .appoint button{margin: 10px 0 0 90px}
+    .view{height: 1300px;flex-wrap: wrap;width: 100%;margin:10px 0 0px 0px; }
+    .view .general{height: 150px;width: 100%}
+    .view .solutions{height: 50px;width: 200px;font-size: 15px;line-height: 50px;top: 1280px;left: 25%}
+    .contact{height: 1600px;width: 100%}
+    .contact h1{padding-top: 100px}
+    .contact p{padding: 10px 0 0 60px}
+    .contact iframe{height: 450px;width: 95%;padding: 0 0 0 20px}
+    .contact .kalak{height: 900px;width: 90%;top: 684px;right: 24px}
+    .schedule .var {height:90px;width:80%; }
+    .schedule .var button{margin: 40px 0 0 -180px}
+    .schedule .var button:hover{margin: 38px 0 0 -180px}
+    .schedule .var1{height:90px;width:80%; }
+    .schedule .var1 button{margin: 40px 0 0 -200px}
+    .schedule .var1 button:hover{margin: 38px 0 0 -200px}
+    .schedule .var2{height:90px;width:80%; }
+    .schedule .var2 button{margin: 40px 0 0 -180px}
+    .schedule .var2 button:hover{margin: 38px 0 0 -180px}
+    .kalak h2{padding: 270px 0 0 40px}
+    .phone {height: 1100px;width: 90%;margin: 0 0 0 20px;flex-wrap: wrap;}
+    .phone .Address{height: 230px;width: 100%;}
+    .Address img{height: 120px;width: 120px; margin: 10px 0 0 120px}
+    .Address h2 {padding: 0 0 0 100px;}
+    .Address p {padding: 20px 0 0 130px;}
+    .Address span{padding: 0 0 0 110px;}
+    .phone .Address1{height: 230px;width: 100%;}
+    .Address1 img{height: 120px;width: 120px; margin: 10px 0 0 120px}
+    .Address1 h2 {padding: 0 0 0 100px;}
+    .Address1 p {padding: 20px 0 0 80px;}
+    .phone .Address2{height: 230px;width: 100%;}
+    .Address2 img{height: 120px;width: 120px; margin: 10px 0 0 120px}
+    .Address2 h2 {padding: 0 0 0 130px;}
+    .Address2 p {padding: 20px 0 0 130px;}
+    .Address2 span{padding: 0 0 0 110px;}
+    .main1{height: 1250px}
+    .main1 .best{width: 90%}
+    .main1 .about{width: 90%;top: 340px;left: 20px}
+    .main1 .awards {width: 90%;top: 640px;left: 20px}
+    .main1 .social {width: 90%;top: 940px;left: 20px}
+    .social p{padding: 10px 0 0 0}
+    .social .icon1{left: 0px;}
+    .footer{height: 200px;flex-wrap: wrap;}
+    .footer .copy{height: 40px;width: 90%}
+    .footer .copy p {font-size: 17px}
+    .footer .last{height: 90px;width: 90%}
+    .footer .last li {margin-right: 10px;}
+
+    
+
+}
