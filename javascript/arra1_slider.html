@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz
+        {
+            height: 300px;
+            width: 100%;
+            animation: test 2s;
+            overflow: hidden;
+        }
+        @keyframes test
+         {
+            0%{transform: scale(1.0);}
+            100%{transform: scale(1.4);}
+            
+        }
+
+        .arr
+        {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="arr">
+    <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/131131/xc60-exterior-right-front-three-quarter-2.jpeg?isig=0" id="x" class="x" height="400px" width="100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQr2YlYoET-FudeAmJMldqX6Jozdpwtq1yE8q9Hn9o8W8w5e44KGzF6G8tPKqXOiPeZk&usqp=CAU"  id="x" class="x" height="400px" width="100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMOdLunilvm4EXRAwB6XR-SWfrhVK2_0kX0g&usqp=CAU" id="x" class="x" height="400px" width="100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKbGx2LWwNKWukaXnTqbJTt9NGbrcvDG4IAw&usqp=CAU" id="x" class="x" height="400px" width="100%">
+</div>
+    <script>
+
+index=0;
+
+
+
+        function test()
+        {
+            img = document.getElementsByClassName('x');
+
+            
+            for(i=0;i<img.length;i++)
+            {
+                img[i].style.display="none";
+                img[i].classList.add('xyz')
+            }
+
+            img[index].style.display="block";
+
+            index++;
+
+            if(index==img.length)
+            {
+                index=0;
+            }
+
+            setTimeout(" test()",1000)
+        }
+        test()
+    </script>
+</body>
+</html>

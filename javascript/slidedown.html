@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .x
+        {
+            height: 30px;
+            width: 50%;
+            background-color: aqua;
+            margin: 0 300px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .y
+        {
+            height: 200px;
+            width: 50%;
+            background-color: lightgoldenrodyellow;
+            margin: 0 300px;
+            font-size: 20px;
+            display: none;
+
+        }
+    </style>
+</head>
+<body>
+    <button class="z" style="margin: 0 600px;">stop</button>
+    <button class="x">Click me</button>
+    <div class="y">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Quia aut nam sint eveniet autem? A nulla, dolorem,
+          iusto quae excepturi distinctio nesciunt corporis nihil nisi maxime
+           doloremque? Saepe blanditiis aut aperiam iste explicabo 
+           doloremque vero.
+       </div>
+
+
+           
+
+           <script>
+
+            $('.x').click(() =>
+            {
+                $('.y').slideDown(5000);
+            })
+
+            $('.z').click(() =>
+            {
+                $('.y').stop();
+            })
+
+            
+           </script>
+</body>
+</html>

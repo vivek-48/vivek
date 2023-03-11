@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <form action="">
+        <table border="1">
+            <tr>
+                <td id="nm">name</td>
+                <td><input id="inp1" type="text" onclick="return validateForm(inp1)"></td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td><input id="inp2" type="text" onclick="return validateForm(inp2)"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input id="inp3" type="text" onclick="return validateForm(inp3)"></td>
+            </tr>
+            <tr>
+                <td>confirm password</td>
+                <td><input id="inp4" type="text" onclick="return validateForm(inp4)"></td>
+            </tr>
+            <tr>
+                <td><input id="sub" type="submit" ></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+
+
+       function validateForm(e)
+        {
+
+       
+        if(e.value =="")
+        {
+            alert("that is required");
+            e.style.border ="2px solid Red";
+            
+            return false;
+        }
+        
+
+        else
+        {
+            e.style.border ="2px solid green"
+            return false;
+        }
+       
+        }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+	price : <input type="" name="" value="200">
+
+	<select >
+		<option>--- select Quantity ----</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	</select>
+
+	<span></span>
+
+	<script type="text/javascript">
+	inp_tag	=$('input')
+
+	slc_tag = $('select')
+
+	span_tag = $('span')
+
+    slc_tag.change(() =>
+    {
+    	span_tag.text ( inp_tag.val() * slc_tag.val())
+
+    })
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .x
+        {
+            height: 80px;
+            width: 80px;
+            background-color: lightgreen;
+            margin: 100px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="x"></div>
+    <button id="y">start animation</button>
+    <script>
+ 
+    $('#y').click(() =>
+    {
+
+        $('.x').animate({margin:'100px 200px',height:'+=50px',width:'+=50px',opacity:'0.5'},1200)
+    })
+    </script>
+</body>
+</html>

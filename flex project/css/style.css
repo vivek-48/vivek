@@ -5,14 +5,18 @@ body{overflow-x: hidden;}
 {
 	height: 75px;
 	width:100% ;
-/*	background: lightblue;*/
+	background: lightblue;
 	display: flex;
 }
 .header .logo
 {
 	height: 75px;
 	width: 50%;
-/*	background: lightcoral;*/
+	background: lightcoral;
+}
+.header .logo .fa-list
+{
+	display: none;
 }
 .header .logo img
 {
@@ -78,7 +82,7 @@ body{overflow-x: hidden;}
 	border-top: 1px solid grey;
 	position: sticky;
 	box-shadow: 0 0 5px grey;
-	margin: 10px 0 0 0 ;
+	margin: 0px 0 0 0 ;
 	top: 0px;
 	left: 0;
 	z-index: 5;
@@ -356,9 +360,10 @@ body{overflow-x: hidden;}
 	width: 300px;
 	background: #0e54ae;
 	box-shadow: 0 0 30px #0e54ae;
+	filter: blur(50px);
 	position: absolute;
 	top: 0;
-	left: 100%;
+	left: 110%;
 	transition: .2s;
 	z-index: -1;
 }
@@ -366,25 +371,36 @@ body{overflow-x: hidden;}
 {
 	left: 20%;
 }
+.main .button:hover
+{
+	top: 623px;
+}
 .main .button p
 {
 	font-size: 25px;
-	padding-left: 20px;
+	/* padding-left: 20px;
+	padding-top: 20px; */
+	margin: 5px auto;
 	color: white;
 }
 .main .button i
 {
 	font-size: 25px;
-	padding-top: 15px;
-	padding-left: 20px;
+	margin: 15px auto;
 	color: white;
 }
+.main .button i:hover
+{
+	font-size: 30px;
+}
+
+
 
 .color
 {
 	height: 550px;
 	width: 100%;
-/*	background: lightcoral;*/
+	background: lightcoral;
     position: relative;
 }
 .color .white
@@ -473,6 +489,7 @@ body{overflow-x: hidden;}
 	width: 300px;
 	background: #0e54ae;
 	box-shadow: 0 0 30px #0e54ae;
+	filter: blur(50px);
 	position: absolute;
 	top: 0;
 	left: 100%;
@@ -482,6 +499,10 @@ body{overflow-x: hidden;}
 .inp button:hover::after
 {
 	left: 20%;
+}
+.inp button:hover
+{
+	margin: 8px;
 }
 .color .blue
 {
@@ -560,8 +581,9 @@ body{overflow-x: hidden;}
 	height: 100px;
 	width: 300px;
 	background: #bc74a5;
+	filter: blur(30px);
 	position: absolute;
-	top: 0;
+	top: -10px;
 	left: 100%;
 	box-shadow: 0 0 30px #bc74a5;
 	transition: .2s;
@@ -569,7 +591,12 @@ body{overflow-x: hidden;}
 }
 .excellence button:hover::after
 {
-	left: 50%;
+	margin: 10px;
+	left: 40%;
+}
+.excellence button:hover
+{
+	margin: 28px;
 }
 .excellence .service
 {
@@ -681,11 +708,14 @@ body{overflow-x: hidden;}
 	top: 270px;
 	left: 180px;
 }
+
+
+
 .team
 {
   height: 700px;
   width: 100%;
-/*  background: lightcoral;*/
+ background: lightcoral;
   position: relative;
 }
 .team .teeth
@@ -743,6 +773,7 @@ body{overflow-x: hidden;}
 	font-size: 20px;
 
 }
+
 .team .teeth1
 {
 	height: 650px;
@@ -924,7 +955,7 @@ body{overflow-x: hidden;}
 {
 	height:500px;
 	width: 50%;
-/*	background: lightpink;*/
+	background: lightpink;
 	position: absolute;
 	top: 50px;
 	right: 0;
@@ -934,21 +965,21 @@ body{overflow-x: hidden;}
 {
 	height: 300px;
 	width: 100%;
-/*	background: lightcoral;*/
+	background: lightcoral;
 	border-top: 1px solid;
 }
 .details .Book .input .detail
 {
 	height: 100px;
 	width: 100%;
-/*	background: lightgrey;*/
+	background: lightgrey;
 	display: flex;
 }
 .input .detail .your
 {
 	height: 100px;
 	width: 50%;
-/*	background: lightpink;*/
+	/* background: lightpink; */
 }
 .input .detail .your p 
 {
@@ -1071,8 +1102,9 @@ body{overflow-x: hidden;}
 	height: 100px;
 	width: 300px;
 	background: #bc74a5;
+	filter: blur(30px);
 	position: absolute;
-	top: 0;
+	top: -10px;
 	left: 100%;
 	box-shadow: 0 0 30px #bc74a5;
 	transition: .2s;
@@ -1080,8 +1112,11 @@ body{overflow-x: hidden;}
 }
 .details .Book button:hover::after
 {
-	left: 80%;
+	left: 40%;
 }
+
+
+
 
 .view
 {
@@ -1142,6 +1177,7 @@ body{overflow-x: hidden;}
 	height: 100px;
 	width: 300px;
 	background: #0e54ae;
+	filter: blur(50px);
 	position: absolute;
 	top: 0;
 	left: 100%;
@@ -1152,6 +1188,10 @@ body{overflow-x: hidden;}
 .view .solutions:hover::after
 {
 	left: 20%;
+}
+.view .solutions:hover
+{
+	top:368px ;
 }
 .view .solutions a 
 {
@@ -1450,11 +1490,15 @@ body{overflow-x: hidden;}
 {
 	padding: 0 0 0 40px;
 }
+
+
+
+
 .main1
 {
    height: 400px;
    width: 100%;
-   background: lightgrey;
+   background: lightcyan;
    position: relative;
 
 }
@@ -1462,7 +1506,7 @@ body{overflow-x: hidden;}
 {
 	height: 300px;
 	width: 275px;
-/*	background: lightgrey;*/
+	background: lightgoldenrodyellow;
 	position: absolute;
 	top:50px;
 	left: 10px;
@@ -1497,7 +1541,7 @@ font-weight: bold;
 {
 	height: 300px;
 	width: 200px;
-/*	background: lightgrey;*/
+	background: lightgrey;
 	position: absolute;
 	top:50px;
 	left: 300px;
@@ -1524,7 +1568,7 @@ font-weight: bold;
 {
 	height: 300px;
 	width: 350px;
-/*	background: lightgrey;*/
+	background: lightgrey;
 	position: absolute;
 	top:50px;
 	left: 520px;
@@ -1577,7 +1621,7 @@ font-weight: bold;
 {
 	height: 300px;
 	width: 300px;
-/*	background: lightgrey;*/
+	background: lightgrey;
 	position: absolute;
 	top:50px;
 	left: 890px;
@@ -1718,7 +1762,7 @@ font-weight: bold;
 {
 	height: 75px;
 	width: 40%;
-/*	background: lightcoral;*/
+	background: lightcoral;
 }
 .footer .copy p 
 {
@@ -1738,7 +1782,7 @@ font-weight: bold;
 {
 	height: 75px;
 	width: 60%;
-/*	background: lightpink;*/
+	background: lightpink;
 	text-align: center;
 	line-height: 75px;
 }

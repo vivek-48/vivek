@@ -1,3 +1,53 @@
+@media(max-width:1200px)
+{
+    .header .logo{width: 80%;}
+    .header .logo .fa-list{display: inline;font-size: 50px;margin:-20px 0 0 10px;}
+    .header .text{display: none;}
+    .header .logo img{margin: 0 0 0 30px;}
+    .nav{display: none;}
+
+    .color .white{right: 10px;}
+    .color .blue{left: -10px;width: 450px;}
+    .color .blue img{margin: -10px 0 0 -80px;}
+
+    .team .teeth{width: 250px;height: 620px;left: 3px;}
+    .teeth img{width: 250px;}
+    .team .teeth1{height: 670px;width: 250px;left: 260px;}
+    .teeth1 img{width: 250px;}
+    .team .teeth2{height: 670px;width: 250px;left: 520px;}
+    .teeth2 img{width: 250px;}
+    .team .teeth3{width: 250px;height: 620px;left: 780px;}
+    .teeth3 img{width: 250px;}
+
+
+    .details .Book{right: 20px;}
+
+    .input .detail .your input{width: 240px;}
+    .input .detail1 .select select {width: 240px;}
+    .input .detail1 .your input {width: 240px;}
+    .details .Book .input .appoint button{margin: 10px 0 0 150px;}
+
+
+    .main1 .best{width: 250px;left: 0;}
+    .main1 .about{left: 250px;width: 150px;}
+    .main1 .awards{left: 400px;width: 350px;}
+    .main1 .social{left: 750px;width: 280px;}
+
+    .footer .copy{width: 40%;}
+    .footer .copy p {font-size: 18px;padding: 0;margin: 0;}
+    .footer .copy span{font-size:18px ;}
+    .footer .last{width: 60%;}
+    .footer .last li {margin-right: 10px;}
+}
+
+
+
+
+
+
+
+
+
 @media(max-width:500px)
 {
 	.header .logo{height: 70px;width: 100%}

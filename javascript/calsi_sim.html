@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="num" name="" value="">
+    <input type="text" id="num1" name="" value="">
+
+    <b id="p1" ></b>
+
+    <br><br>
+
+    <input type="submit" name="" onclick=" addnums()"  value="+">
+    <input type="submit" name=""  onclick=" mulnums()" value="-">
+    <input type="submit" name="" onclick=" subnums()"  value="*">
+    <input type="submit" name="" onclick="modnums()" value="/">
+    <input type="submit" name="" onclick=" divnums()"  value="%">
+
+    <script>
+
+       inp_tag = document.getElementById('num')
+       inp1_tag = document.getElementById('num1')
+       p_tag = document.getElementById('p1')
+
+      // console.log( inp_tag)
+      //   console.log( inp_tag.value)
+
+      //   console.log( inp1_tag)
+      //   console.log( inp1_tag.value)
+
+
+        // console.log( parseInt( inp_tag.value) +  parseInt( inp1_tag.value))
+
+
+        // document.write(parseInt( inp_tag.value) +  parseInt( inp1_tag.value))
+
+        function addnums()
+       {
+
+        // document.write(parseInt( inp_tag.value) +  parseInt( inp1_tag.value))
+          p_tag.innerHTML = parseInt(inp_tag.value) + parseInt(inp1_tag.value)
+        }
+        function mulnums()
+       {
+
+        // document.write(parseInt( inp_tag.value) +  parseInt( inp1_tag.value))
+          p_tag.innerHTML = parseInt(inp_tag.value) - parseInt(inp1_tag.value)
+        }
+        function subnums()
+       {
+
+        // document.write(parseInt( inp_tag.value) +  parseInt( inp1_tag.value))
+          p_tag.innerHTML = parseInt(inp_tag.value) * parseInt(inp1_tag.value)
+        }
+        function modnums()
+       {
+
+        // document.write(parseInt( inp_tag.value) +  parseInt( inp1_tag.value))
+          p_tag.innerHTML = parseInt(inp_tag.value) / parseInt(inp1_tag.value)
+        }
+        function divnums()
+       {
+
+        // document.write(parseInt( inp_tag.value) +  parseInt( inp1_tag.value))
+          p_tag.innerHTML = parseInt(inp_tag.value) % parseInt(inp1_tag.value)
+        }
+        
+
+        
+
+    </script>
+    
+</body>
+</html>

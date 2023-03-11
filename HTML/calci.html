@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0}
+
+		.calci
+		{
+			height: 400px;
+			width: 400px;
+			background: #ADD8E6
+;
+			margin: 50px 0 0 400px;
+		}
+		.calci .calci1
+		{
+			height: 80px;
+			width: 100%;
+/*			background: lightgrey;*/
+/*			border: 1px solid;*/
+		}
+		.calci .calci2
+		{
+			height: 80px;
+			width: 100%;
+/*			background: lightgrey;*/
+/*			border: 1px solid;*/
+			display: flex;
+		}
+		.calci .calci3
+		{
+			height: 80px;
+			width: 100%;
+/*			background: lightgrey;*/
+/*			border: 1px solid;*/
+			display: flex;
+		}
+		.calci .calci4
+		{
+			height: 80px;
+			width: 100%;
+/*			background: lightgrey;*/
+/*			border: 1px solid;*/
+			display: flex;
+		}
+		.calci .calci5
+		{
+			height: 80px;
+			width: 100%;
+/*			background: lightgrey;*/
+/*			border: 1px solid;*/
+			display: flex;
+		}
+		.calci .calci1 input
+		{
+			height: 60px;
+			width: 90%;
+			margin: 10px 0 0 20px;
+			border: none;
+			border-bottom: 5px solid grey;
+			text-align: right;
+			font-size: 20px;
+		}
+		.calci .calci2 input
+		{
+			height: 60px;
+			width: 19%;
+			margin: 10px 0 0 18px;
+			font-size: 25px;
+			border: none;
+			border-bottom: 5px solid grey;
+			cursor: pointer;
+		}
+		.calci .calci3 input
+		{
+			height: 60px;
+			width: 19%;
+			margin: 10px 0 0 18px;
+			font-size: 25px;
+			border: none;
+			border-bottom: 5px solid grey;
+			cursor: pointer;
+		}
+		.calci .calci4 input
+		{
+			height: 60px;
+			width: 19%;
+			margin: 10px 0 0 18px;
+			font-size: 25px;
+			border: none;
+			border-bottom: 5px solid grey;
+			cursor: pointer;
+		}
+		.calci .calci5 input
+		{
+			height: 60px;
+			width: 19%;
+			margin: 10px 0 0 18px;
+			font-size: 25px;
+			border: none;
+			border-bottom: 5px solid grey;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="calci">
+		<form>
+		<div class="calci1">
+			<input type="text" name="display" >
+		</div>
+		<div class="calci2">
+			<input type="button" value="1" onclick=" display.value +='1' ">
+			<input type="button" value="2" onclick=" display.value +='2' ">
+			<input type="button" value="3" onclick=" display.value +='3' ">
+			<input type="button" value="+" style="background: #FFFFE0;" onclick=" display.value +='+' ">
+		</div>
+		<div class="calci3" >
+			<input type="button" name="" id="n4" value="4" onclick=" display.value +='4' ">
+			<input type="button" name="" id="n5" value="5" onclick=" display.value +='5' ">
+			<input type="button" name="" id="n6" value="6" onclick=" display.value +='6' ">
+			<input type="button" name=""  value="-" style="background: #FFFFE0;" onclick=" display.value +='-' ">
+		</div>
+		<div class="calci4">
+			<input type="button" name="" id="n7" value="7" onclick=" display.value +='7' ">
+			<input type="button" name="" id="n8" value="8" onclick=" display.value +='8' ">
+			<input type="button" name="" id="n9" value="9" onclick=" display.value +='9' ">
+			<input type="button" name=""  value="*" style="background: #FFFFE0;" onclick=" display.value +='*' ">
+		</div>
+		<div class="calci5">
+			<input type="button" value="C" style="background: #FFA07A;" onclick=" display.value ='' ">
+			<input type="button" value="0" onclick=" display.value +='0' ">
+			<input type="button" value= "=" onclick=" display.value =eval(display.value) ">
+			<input type="button" value="/" style="background: #FFFFE0;" onclick=" display.value +='/' ">
+		</div>
+		</form>
+	</div>
+
+
+	<script type="text/javascript">
+
+		num1 = document.getElementById('n1');
+        num2 = document.getElementById('n2');
+        inp_tag = document.getElementById('res');
+
+
+        function addNums()
+        {
+
+            inp_tag.innerHTML = num1.value +  num2.value
+        }
+
+
+
+
+	</script>
+
+</body>
+</html>

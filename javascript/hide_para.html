@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+    <button onclick="hidepara()">hide</button>
+    <button onclick="showpara()">show</button>
+    <button onclick="hideshowpara()">hide/show</button>
+
+    <script type="text/javascript">
+    	p1_tag = document.getElementById('para')
+
+    	function hidepara()
+    	 {
+    		p1_tag.style.display ="none"
+    	}
+    	function showpara()
+    	 {
+    		p1_tag.style.display ="block"
+    	}
+    	function hideshowpara()
+    	 {
+    		if (p1_tag.style.display =="none") 
+    		{
+    			p1_tag.style.display ="block"
+    		}
+
+    		else
+    		{
+    			p1_tag.style.display ="none"
+    		}
+    	}
+
+
+    </script>
+
+</body>
+</html>

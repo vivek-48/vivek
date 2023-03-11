@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	price : <input type="text" id="p" name="" value="200">
+
+
+	<select id="s" onchange="getprice()">
+		<option>select your quantity</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	</select>
+
+	<b id="res"></b>
+
+	<script type="text/javascript">
+		
+
+		p1 = document.getElementById('p')
+		s1 = document.getElementById('s')
+		b1 = document.getElementById('res')
+
+
+		function getprice() 
+		{
+			b1.innerHTML = p1.value * s1.value
+		}
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<!-- <input type="text" id="i1" name=""> -->
+	<input type="text" id="inp" name="" onkeypress="getText() " >
+
+	<textarea name="" id="txt" cols="30" rows="10"></textarea>
+
+    <button onclick="getText()">Get text</button>
+
+
+    <script type="text/javascript">
+    	
+    	 i_tag = document.getElementById('inp')
+    	 t_tag = document.getElementById('txt')
+    	 
+    	 // document.write( i_tag.value)
+
+    	 
+    	 function getText() 
+    	 {
+    	 	 t_tag.innerHTML = i_tag.innerHTML
+    	 }
+
+
+    </script>
+
+
+
+</body>
+</html>

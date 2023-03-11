@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin: 0;}
+        header
+        {
+            /* height: 100px; */
+            width: 100%;
+            background-color: blueviolet;
+            padding: 25px 0;
+            font-size:40px;
+            position: fixed;
+            top: 0;
+            transition: 1s;
+        }
+        nav
+        {
+            height: 50px;
+            width: 100%;
+            background-color: lightgoldenrodyellow;
+            margin-top: 100px;
+        }
+        section
+        {
+            height: 1500px;
+            width: 100%;
+            background-color: rgb(80, 64, 95);
+        }
+        footer
+        {
+            height: 200px;
+            width: 100%;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body onscroll="scrolleffect()">
+
+    <header id="hd">HEader</header>
+    <nav>nav</nav>
+    <section>Content</section>
+    <footer>Footer</footer>
+
+
+    
+    <script>
+
+       header_tag = document.getElementById('hd')
+
+       console.log(header_tag )
+
+
+       function scrolleffect()
+       {
+
+          if(document.documentElement.scrollTop > 500)
+          {
+            header_tag.style.padding="18px 0"  
+            header_tag.style.fontSize="30px"
+            header_tag.style.backgroundColor="lightcoral"  
+            header_tag.style.top='-100px'
+          }
+
+          else
+          {
+            header_tag.style.padding="20px 0"  
+            header_tag.style.fontSize="40px"
+            header_tag.style.backgroundColor="blueviolet" 
+            header_tag.style.top='0'
+          }
+
+       }
+
+          
+           
+    </script>
+    
+</body>
+</html>

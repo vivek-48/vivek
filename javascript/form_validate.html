@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Name: <input type="text" id="nm" onblur="return ValidateForm()"  > <span id="nmErr"></span><br><br>
+    phone: <input type="text" id="pass" onblur="return ValidateForm()"> <br><br>
+    <!-- Confirm Password: <input type="text" id="cpass"> <br><br> -->
+    email: <input type="text" id="mb" onblur="return ValidateForm()"> <br><br>
+     <input type="submit" onclick="ValidateForm()"> <br><br>
+
+     <script>
+
+        // name = document.getElementById('nm');
+        // console.log(name)
+
+        name1 = document.getElementById('nm');
+        pwd = document.getElementById('pass');
+        cpwd = document.getElementById('cpass');
+        mobile = document.getElementById('mb');
+        span = document.getElementById('nmErr');
+
+        console.log(name1)
+        console.log(name1.value)
+
+        ex_nm = /^[a-zA-Z]+$/
+        ex_mb = /^[0-9]{10}$/
+        // ex_em = /^[A-Za-z]+[0-9]{10}+-+@+.$/;
+
+        function ValidateForm()
+        {
+            if(name1.value == "")
+            {
+                // alert();
+                span.innerHTML="*Name is required..!";
+                return false;
+            }
+            if (!ex_nm.test(name1.value)) 
+            {
+                alert("only letters ....")
+                return false;
+            }
+
+            if(pwd.value == "")
+            {
+                // alert("*Password is required..!");
+                 span.innerHTML="*mobile is required..!";
+                return false;
+            }
+             if (!ex_mb.test(pwd.value)) 
+            {
+                alert("10 digits only ....")
+                return false;
+            }
+
+
+
+            if(mobile.value == "")
+            {
+                // alert("*email is required..!");
+                 span.innerHTML="*email is required..!";
+                return false;
+            }
+            // if (!ex_em.test(mobile.value)) 
+            // {
+            //     alert("special character are not allowed ....")
+            //     return false;
+            // }
+           
+        }
+     </script>
+</body>
+</html>

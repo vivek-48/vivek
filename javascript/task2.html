@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<h2>Click me for current Date-time</h2>
+<p>this is para</p>
+<h1>Heading 1</h1>
+<a href="x.html">link</a>
+<div>Div tag</div>
+
+<img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80" height="200px" width="350px">
+
+
+<script>
+
+	$('h1').text('vivek')
+
+  p_tag = $('p').val()
+
+  // console.log(p_tag)
+
+     $('img').click(() =>
+     {
+     	alert( $('p').text());
+
+     	alert($('h1').text());
+     	alert($('a').text());
+     	alert($('div').text());
+     })
+
+
+     $('h2').click(() =>
+     {
+     	$('h2').text(new Date());
+     })
+
+
+
+
+
+	</script>
+
+
+
+
+</body>
+</html>
