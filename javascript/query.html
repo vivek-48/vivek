@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .xyz
+        {
+            height: 300px;
+            width: 300px;
+            animation: test 2s infinite;
+
+        }
+
+        @keyframes test{
+            0% {opacity: 0;}
+           100% {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>hello</h1>
+    <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80" alt="no image" >
+    
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eaque maxime non repudiandae, laudantium ab tempora? Molestiae, iure deleniti! Maiores reiciendis molestias ipsum omnis officia! A ut placeat aperiam nam.
+    </h2>
+
+    <div>345</div>
+
+    <input type="text" value="200" >
+
+    <!-- <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <button>get me</button> -->
+
+   <select name="" id="">
+    <option >----- select quantity-----</option>
+    <option >1</option>
+    <option >2</option>
+    <option >3</option>
+    <option >4</option>
+   </select>
+
+   <span></span>
+
+    <script>
+        $('div').click(() =>
+        {
+            $('div').new Date()
+        })
+
+        $('select').change(() =>
+        {
+            $('span').text($('input').val() * $('select').val())
+        })
+
+        $('button').click(() =>
+        {
+            $('textarea').text($('input').val())
+        })
+
+        $('input').keyup(() =>
+        {
+            $('textarea').text($('input').val())
+        })
+
+        $('h1').click(() =>
+        {
+            $('h1').text("hii<u>hejwndn</u>")
+        })
+
+        $('img').click(() =>
+        {
+            $('img').attr("src","https://www.axiapr.com/hs-fs/hubfs/blog-files/photos%20for%20the%20media.jpg?width=450&name=photos%20for%20the%20media.jpg")
+        })
+
+        $('img').toggleClass('xyz')
+
+        alert($('div').val())
+    </script>
+
+
+
+
+    
+</body>
+</html>

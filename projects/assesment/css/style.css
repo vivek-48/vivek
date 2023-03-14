@@ -767,7 +767,7 @@
 {
     height: 60px ;
     width: 50%;
-    background: lightgrey;
+    /* background: lightgrey; */
 }
 .pencil .morbi1 .white .star i 
 {
@@ -832,7 +832,7 @@
 {
     height: 60px ;
     width: 50%;
-/*    background: lightgrey;*/
+   /* background: lightgrey; */
 }
 .pencil .morbi2 .white .star i 
 {
@@ -1004,7 +1004,7 @@
 {
     height: 330px;
     width: 300px;
-   background: lightblue;
+   /* background: lightblue; */
     margin: 50px 0  0 80px;
 }
 .facts .percent .yellow
@@ -1032,7 +1032,7 @@
 {
      height: 330px;
     width: 300px;
-   background: lightblue;
+   /* background: lightblue; */
     position: absolute;
     top: 300px;
     left:400px;

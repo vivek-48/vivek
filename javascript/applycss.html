@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .xyz 
+        {
+            color:blue;
+            height: 100px;
+            width: 300px;
+            background: lightcoral;
+            font-size: 64px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="x">Hello</h1>
+
+    <button id="b1">Add CSS</button>
+    <button id="b2">Remove CSS</button>
+    <button id="b3">Add/Remove CSS</button>
+<script>
+
+// $("slector").css("property","value")
+//    $("h1").css("color","red");
+//    $("h1").css("height","100px");
+//    $("h1").css("width","100px");
+//    $("h1").css("background","green");
+//    $("h1").css("font-size","60px");
+
+// $('#x').addClass('xyz')
+
+// $("h1").css({"color":"red","background":"green"})
+
+$('#b1').click(function(){
+
+    $('#x').addClass('xyz')
+})
+
+$('#b2').click(function(){
+
+$('#x').removeClass('xyz')
+})
+
+$('#b3').click(function(){
+
+$('#x').toggleClass('xyz')
+})
+
+
+
+</script>
+    
+</body>
+</html>
