@@ -10,34 +10,14 @@
     .color .blue{left: -10px;width: 450px;}
     .color .blue img{margin: -10px 0 0 -80px;}
 
-    .team .teeth{width: 250px;height: 620px;left: 3px;}
-    .teeth img{width: 250px;}
-    .team .teeth1{height: 670px;width: 250px;left: 260px;}
-    .teeth1 img{width: 250px;}
-    .team .teeth2{height: 670px;width: 250px;left: 520px;}
-    .teeth2 img{width: 250px;}
-    .team .teeth3{width: 250px;height: 620px;left: 780px;}
-    .teeth3 img{width: 250px;}
-
-
-    .details .Book{right: 20px;}
-
-    .input .detail .your input{width: 240px;}
-    .input .detail1 .select select {width: 240px;}
-    .input .detail1 .your input {width: 240px;}
-    .details .Book .input .appoint button{margin: 10px 0 0 150px;}
-
-
-    .main1 .best{width: 250px;left: 0;}
-    .main1 .about{left: 250px;width: 150px;}
-    .main1 .awards{left: 400px;width: 350px;}
-    .main1 .social{left: 750px;width: 280px;}
-
-    .footer .copy{width: 40%;}
-    .footer .copy p {font-size: 18px;padding: 0;margin: 0;}
-    .footer .copy span{font-size:18px ;}
-    .footer .last{width: 60%;}
-    .footer .last li {margin-right: 10px;}
+    .team .teeth{width: 260px;height: 620px;left: ;}
+    .teeth img{width: 260px;}
+    .team .teeth1{height: 670px;width: 260px;left: 290px;}
+    .teeth1 img{width: 260px;}
+    .team .teeth2{height: 670px;width: 260px;left: 560px;}
+    .teeth2 img{width: 260px;}
+    .team .teeth3{width: 260px;height: 620px;left: 830px;}
+    .teeth3 img{width: 260px;}
 }
 
 
