@@ -14,7 +14,7 @@ a{
 section{
 	width:100%;
 	height:95vh;
-	background-image:url("D://photo/vivek.jpg");
+	background-image:url("../image/FullSizeRender-19.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
 	position: relative;
@@ -252,22 +252,34 @@ font-size: ;}
 	height: 40px;
 	width: 170px;
 	margin: 20px auto;
-	background-color: aqua;
+	/* background-color: aqua; */
+	color: white;
+}
+.box-1-hover .hover{
+	height: 60px;
+	width: 60px;
+	margin: 20px auto;
+	/* background-color: aqua; */
+	color: white;
+}
+.box-1-hover a{
+	text-decoration: none;
+	color: white;
 }
 
 .box-1-hover h1{
 	margin: 10px auto;
 	height: 60px;
 	width:180px ;
-	background-color: lightgrey;
+	color: white;
+	/* background-color: lightgrey; */
 }
  
-.box-1-hover i{
+/* .box-1-hover i{
 	font-size: 30px;
-	margin: 30px auto;
 	background-color: lightsalmon;
 	display: inline;
-}
+} */
 /* .box-1{
 	background-image:url("../images/services-1.png");
 }
