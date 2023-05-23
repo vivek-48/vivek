@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;font-size: 22px;cursor: pointer;}
+        .main
+        {
+            /* height: 400px; */
+            width: 400px;
+            background-color: antiquewhite;
+            /* display: flex;
+            justify-content: center; */
+            margin: 100px auto;
+        }
+        .calculator
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            text-align: center;
+        }
+        input
+        {
+        height: 60px;
+            width: 100%;
+            /* border: none; */
+            color: black;
+        }
+        .btn{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color: white;
+            line-height: 80px;
+        }
+        .txt
+        {
+            background-color: aqua;
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="text" id="dis" >
+        <div class="calculator">
+            
+            <div class="btn" id="btn" onclick="play.value=''">AC</div>
+            <div class="btn" id="btn" onclick="whrt() ">DEC</div>
+            <div class="btn" id="btn" onclick="any('%')" >%</div>
+            <div class="btn" id="btn" onclick="any('/')" >/</div>
+
+            <div class="btn" id="btn"  onclick="any(7)">7</div>
+            <div class="btn" id="btn" onclick="any(8)">8</div>
+            <div class="btn" id="btn" onclick="any(9)">9</div>
+            <div class="btn" id="btn" onclick="any('+')">+</div>
+
+            <div class="btn" id="btn" onclick="any(6)">6</div>
+            <div class="btn" id="btn" onclick="any(5)">5</div>
+            <div class="btn" id="btn" onclick="any(4)">4</div>
+            <div class="btn" id="btn" onclick="any('-')">-</div>
+
+            <div class="btn" id="btn" onclick="any(3)">3</div>
+            <div class="btn" id="btn" onclick="any(2)">2</div>
+            <div class="btn" id="btn" onclick="any(1)">1</div>
+            <div class="btn" id="btn" onclick="any('*')">X</div> 
+            
+            <div class="btn" id="btn" onclick="any(0)">0</div>
+            <div class="btn" id="btn" onclick="any('00')">00</div>
+            <div class="btn" id="btn" onclick="equal()">=</div>
+        </div>
+
+    </div>
+
+    <!-- <input type="text" id="inp">
+    <div class="inp" style="display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
+       
+         <div class="txt" id="txt" onclick="any(7)">7</div>
+        <div class="txt" id="txt" onclick="any(6)">6</div>
+        <div class="txt" id="txt" onclick="any(5)"> 5</div>
+        <div class="txt" id="txt" onclick="any(4)">4</div> 
+
+    </div> -->
+    <script>
+       
+
+        play=document.getElementById('dis');
+     text=document.getElementById('btn');
+        function any(ver)
+        {
+            play.value=play.value+ver;
+        }
+      
+        function equal() {
+            play.value=eval(play.value);
+        }
+
+       function whrt() {
+         play.value=play.value.slice(0,-1);
+       }
+
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+@media(max-width:1050px)
+{
+    .content h1{left: 25%;font-size: 140px;}
+    .content .me{left: 38%;top: 80px;} 
+   
+    .content1 h1{left: 25%;font-size: 140px;}
+    .content1 .me{left: 38%;top: 80px;} 
+
+    .content2 h1{left: 25%;font-size: 140px;}
+    .content2 .me{left: 38%;top: 80px;} 
+
+    .content3 h1{left: 20%;font-size: 140px;}
+    .content3 .me{left: 33%;top: 80px;}
+    .content3 .gallery{width: 100%;}
+     
+    .content4 h1{left: 20%;font-size: 140px;}
+    .content4 .me{left: 36%;top: 80px;}
+
+    .contact .message{margin: 0;}
+    .contact .touch{margin: 0 30px;}
+}
+
+@media(max-width:1000px)
+{
+    .nav2 img{visibility: hidden;}
+   
+}
+@media(max-width:900px)
+{
+    .content h1{left: 20%;font-size: 130px;}
+    .content .me{left: 34%;top: 80px;} 
+   
+    .content1 h1{left: 20%;font-size: 130px;}
+    .content1 .me{left: 34%;top: 80px;} 
+
+    .content2 h1{left: 20%;font-size: 130px;}
+    .content2 .me{left: 34%;top: 80px;}
+    
+    .content3 h1{left: 9%;font-size: 120px;}
+    .content3 .me{left: 25%;top: 70px;}
+
+    .content4 h1{left: 9%;font-size: 120px;}
+    .content4 .me{left: 25%;top: 70px;}
+}
+@media(max-width:950px)
+{
+    .content{height: 1400px;}
+    .content .about{height: 1150px;grid-template-columns: 1fr;}
+    .who button{margin: 5px 90px;}
+    .personal span{width: 80%;margin: 10px auto;}
+    .expertise .exp1{width: 80%;}
+    .exp1 .img i{font-size: 35px;margin: 5px 20px;}
+    .expertise .exp2{width: 80%;}
+    .exp2 .img i{font-size: 35px;margin: 5px 20px;}  
+    
+    .content4{height: 1300px;}
+    .content4 .map{height: 1100px;}
+    .map .contact{height: 950px;display: block;width: 90%;left: 35px;}
+    .contact .message{width: 100%;margin: 0;}
+    .message h2{margin: 20px 20px;}
+    .message input,.message textarea,.message button{margin: 10px 20px;}
+    .contact .touch{width: 100%;margin: 0;height: 400px;}
+    .touch h2{margin: 20px 20px;}
+    .touch .phone{margin: 20px 20px;}
+    .touch .icon{margin: 20px 20px;}
+}
+@media(max-width:850px)
+{
+    .navbar i{right: 20px;top: 10px;font-size: 40px;padding: 5px 10px;}
+    .nav2{display: none;}   
+    .navbar{height: 60px;border: none;}
+    .navbar .nav{height: 230px;grid-template-columns: 1fr;grid-template-rows: 210px;display: none;background-color: white;margin: -5px 0;}
+    .nav .nav1{display: block;margin: 0px auto;}
+    .nav1 a{display: block;}
+    .nav1 a li{margin: 15px auto;text-align: center;}
+    .nav .nav3{display: block;margin: 10px auto;margin: -10px 0;}
+    .nav3 a{display: block;}
+    .nav3 a li{margin: 15px auto;text-align: center;}
+}
+@media(max-width:835px)
+{
+    .header .intro{left: 30px;width: 60%;}
+
+    .skill1 .lng{width: 20%;}
+    .lng h3{font-size: 15px;}
+    .skill1 .main{width: 70%;}
+    .skill1 .perc{width: 10%;}
+    .perc h3{font-size: 15px;}
+
+    .content3{height: 1800px;}
+    .content3 .gallery{width: 70%;height: 1300px;grid-template-columns: 1fr;}
+
+}
+@media(max-width:750px)
+{
+    .header .intro{left: 10px;width: 60%;}
+    .intro h3{font-size: 30px;}
+    .intro h1{font-size: 45px;}
+ 
+    .navbar i{display: block;}
+    .nav1,.nav2,.nav3{display: none;}
+
+    .content{height: 1400px;}
+    .content .about{height: 1100px;grid-template-columns: 1fr;}
+    .who button{margin: 5px 70px;}
+    .personal span{width: 80%;margin: 10px auto;}
+    .expertise .exp1{width: 80%;}
+    .exp1 .img i{font-size: 35px;margin: 5px 20px;}
+    .expertise .exp2{width: 80%;}
+    .exp2 .img i{font-size: 35px;margin: 5px 20px;}
+
+    .main .load{margin: 19px 5px;}
+
+    .content4{height: 1300px;}
+    .content4 .map{height: 1100px;}
+    .map .contact{height: 950px;display: block;width: 90%;left: 25px;}
+    .contact .message{width: 100%;margin: 0;}
+    .message h2{margin: 20px 20px;}
+    .message input,.message textarea,.message button{margin: 10px 20px;}
+    .contact .touch{width: 100%;margin: 0;height: 400px;}
+    .touch h2{margin: 20px 20px;}
+    .touch .phone{margin: 20px 20px;}
+    .touch .icon{margin: 20px 20px;}
+    
+}
+@media(max-width:700px)
+{
+    .content h1{left: 8%;font-size: 130px;}
+    .content .me{left: 29%;top: 75px;}
+
+    .content1 h1{left: 8%;font-size: 130px;}
+    .content1 .me{left: 29%;top: 75px;}
+
+    .content2 h1{left: 8%;font-size: 115px;}
+    .content2 .me{left: 29%;top: 75px;}
+
+    .content3 h1{left: 8%;font-size: 95px;}
+    .content3 .me{left: 25%;top: 65px;font-size: 40px;}
+
+    .content4 h1{left: 8%;font-size: 95px;}
+    .content4 .me{left: 25%;top: 65px;font-size: 40px;}
+}
+@media(max-width:592px)
+{
+    .header .intro{left: 10px;width: 60%;}
+    .intro h3{font-size: 30px;}
+    .intro h1{font-size: 36px;}
+
+}
+
+@media(max-width:500px)
+{
+    .header .intro{left: 10px;width: 60%;}
+    .intro h3{font-size: 25px;}
+    .intro h1{font-size: 30px;}
+   
+    .content .about{top: 170px;}
+    .content h1{left: 0%;font-size: 110px;}
+    .content .me{left: 20%;top: 70px;font-size: 40px;}
+    .who button{margin: 5px 40px;}
+    .exp1 .img i{font-size: 35px;margin: 5px 10px;}
+    .exp2 .img i{font-size: 35px;margin: 5px 10px;}
+
+    .content1 h1{left: 0%;font-size: 110px;}
+    .content1 .me{left: 20%;top: 70px;font-size: 40px;}
+    .content1 .skill{width: 100%;left: 0;}
+
+    .content2 h1{left: 0%;font-size: 100px;}
+    .content2 .me{left: 20%;top: 70px;font-size: 40px;}
+    .content2 .skill{width: 100%;left: 0;}
+
+    .content3 h1{left: 2%;font-size: 80px;}
+    .content3 .me{left: 23%;top: 60px;font-size: 30px;}
+    .content3 .gallery{width: 90%;height: 1750px;grid-template-columns: 1fr;}
+
+    .content4 h1{left: 2%;font-size: 80px;}
+    .content4 .me{left: 25%;top: 60px;font-size: 30px;}
+
+    .content4{height: 1300px;}
+    .content4 .map{height: 1100px;}
+    .map .contact{height: 950px;display: block;width: 90%;left: 20px;}
+    .contact .message{width: 100%;margin: 0;}
+    .message h2{margin: 20px 20px;}
+    .message input,.message textarea,.message button{margin: 10px 20px;}
+    .contact .touch{width: 100%;margin: 0;height: 400px;}
+    .touch h2{margin: 20px 20px;}
+    .touch .phone{margin: 20px 20px;}
+    .touch .icon{margin: 20px 20px;}
+
+
+}

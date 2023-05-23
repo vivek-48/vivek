@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;}
+        .navbar
+        {
+            height: 50px;
+            width: 100%;
+            background-color: aqua;
+            border: 2px solid;
+        }
+        .nav
+        {
+            height: 50px;
+            width: 100%;
+            background-color: aliceblue;
+            position: relative;
+        }
+        ul
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav li
+        {
+            list-style: none;
+            font-size: 20px;
+            line-height: 50px;
+        }
+        .nav li .list
+        {
+            height: 300px;
+            width: 15%;
+            background-color: bisque;
+            position: absolute;
+            top: 50px;
+            left: 5%;
+            text-align: center;
+        }
+        .nav li .list ul
+        {
+            display: block;
+        }
+        .image
+        {
+            width: 800px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 170px;
+            background-color: blue;
+            display: flex;
+        }
+        .image .img1
+        {
+            background-color: lightcoral;
+            width: 25%;
+        }
+        .img1 .img 
+        {
+            height: 150px;
+            width: 100%;
+        }
+        .img1 .text
+        {
+            height: 50%;
+            width: 100%;
+        }
+        .text .tag
+        {
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        .image1
+        {
+            width: 800px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 170px;
+            background-color: blue;
+            display: flex;
+            opacity: 0;
+        }
+        .image1 .img2
+        {
+            background-color: lightcoral;
+            width: 25%;
+        }
+        .img2 .img 
+        {
+            height: 150px;
+            width: 100%;
+        }
+        .img2 .text
+        {
+            height: 50%;
+            width: 100%;
+        }
+        .text .tag
+        {
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        .ig1:hover .image1
+        {
+            opacity: 1;
+        }
+
+       
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav">
+            <ul>
+                <li>HOME</li>
+                <li>News
+                        <div class="list">
+                            <ul>
+                                <li class="ig1">All
+                                    <div class="image">
+                                        <div class="img1">
+                                            <div class="img">
+                                                 <img src="https://themewagon.github.io/magnews2/images/post-05.jpg" alt="" height="100%" width="100%">
+                                            </div>
+                                            <div class="text">
+                                              <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                              <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+                                        <div class="img1">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-10.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img1">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-14.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img1">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-36.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                    </div> 
+                                </li>
+                                <li class="ig1">Enternainment
+                                    <div class="image1">
+                                        <div class="img2">
+                                            <div class="img">
+                                                 <img src="https://themewagon.github.io/magnews2/images/post-50.jpg" alt="" height="100%" width="100%">
+                                            </div>
+                                            <div class="text">
+                                              <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                              <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-08.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-07.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-06.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>  
+                                    </div>
+                                </li>
+                                <li class="ig1">Fashion
+                                    <div class="image1">
+                                        <div class="img2">
+                                            <div class="img">
+                                                 <img src="https://themewagon.github.io/magnews2/images/post-21.jpg" alt="" height="100%" width="100%">
+                                            </div>
+                                            <div class="text">
+                                              <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                              <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-22.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-23.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-24.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>  
+                                    </div>
+                                </li>
+                                <li class="ig1">Life Style
+                                    <div class="image1">
+                                        <div class="img2">
+                                            <div class="img">
+                                                 <img src="https://themewagon.github.io/magnews2/images/post-25.jpg" alt="" height="100%" width="100%">
+                                            </div>
+                                            <div class="text">
+                                              <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                              <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-26.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-27.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-34.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>  
+                                    </div>
+                                </li>
+                                <li class="ig1">Technology
+                                    <div class="image1">
+                                        <div class="img2">
+                                            <div class="img">
+                                                 <img src="https://themewagon.github.io/magnews2/images/post-35.jpg" alt="" height="100%" width="100%">
+                                            </div>
+                                            <div class="text">
+                                              <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                              <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-36.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-37.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-38.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>  
+                                    </div>
+                                </li>
+                                <li class="ig1">Travel
+                                    <div class="image1">
+                                        <div class="img2">
+                                            <div class="img">
+                                                 <img src="https://themewagon.github.io/magnews2/images/post-39.jpg" alt="" height="100%" width="100%">
+                                            </div>
+                                            <div class="text">
+                                              <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                              <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-40.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-41.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>
+                                        <div class="img2">
+                                            <div class="img">
+                                                <img src="https://themewagon.github.io/magnews2/images/post-42.jpg" alt="" height="100%" width="100%">
+                                           </div>
+                                           <div class="text">
+                                             <p class="tag">Donec metus orci, malesuada et lectus vitae</p>
+                                             <p>Music - Feb 18</p>
+                                           </div>
+                                        </div>  
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </li>
+                <li>Entertainment</li>
+                <li>Bussiness</li>
+                <li>Travel</li>
+                <li>Life Style</li>
+                <li>Video</li>
+                <li>Feature</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

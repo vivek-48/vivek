@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .main
+        {
+            height: 1500px;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            /* justify-content: center; */
+            position: relative;
+        }
+        img
+        {
+            margin: 150px auto;
+            transform: scale(1);
+            transition: 1s;
+            display: block;
+        }
+        .xyz 
+        {
+            height: 400px;
+            width: 400px;
+        }
+        .main i
+        {
+            font-size: 40px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <i id="close" class="fa fa-times" aria-hidden="true"></i>
+       <img onmouseenter=" slider()" class="ig" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcqoeHo0uMK3i6JzQfgZfjBoAQchjxH9uobUGBUDZOfZudptfN2KpgVKtzaAAAAvw67KY&usqp=CAU" alt="" height="200px" width="200px">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT581pjQPfBFmA2VrXeJ7vfaVQblZb9zg6rnSYCHNYcVCq0In_2_ZCs22upQCe8fc7RM_A&usqp=CAU" alt="" height="200px" width="200px">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbmSfemii3dps00qLZfnVBoxNLD5Q8VRCnK7DYJe8D7iN73s_Gz5KAt4mza-LCemniDs&usqp=CAU" alt="" height="200px" width="200px">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmxVEC4D6PBkbEfdnE_NIrJc0014AcDavdVnU8ccYCNNZKJsD6YBSusxFupKrhbIKZCY&usqp=CAU" alt="" height="200px" width="200px">
+    </div>
+    <script>
+       img_tag = document.getElementsByTagName("img");
+       i_tag=document.getElementById("close");
+
+       console.log(img_tag)
+            img_tag[0].addEventListener("click",() =>
+            {
+                img_tag[0].classList.add('xyz');
+            })
+            i_tag.addEventListener("click",() =>
+            {
+                img_tag[0].classList.remove('xyz');
+            })
+
+            img_tag[1].addEventListener("click",() =>
+            {
+                img_tag[1].classList.add('xyz');
+            })
+            i_tag.addEventListener("click",() =>
+            {
+                img_tag[1].classList.remove('xyz');
+            })
+
+            img_tag[2].addEventListener("click",() =>
+            {
+                img_tag[2].classList.add('xyz');
+            })
+            i_tag.addEventListener("click",() =>
+            {
+                img_tag[2].classList.remove('xyz');
+            })
+
+            img_tag[3].addEventListener("click",() =>
+            {
+                img_tag[3].classList.add('xyz');
+            })
+            i_tag.addEventListener("click",() =>
+            {
+                img_tag[3].classList.remove('xyz');
+            })
+
+             
+           
+
+    
+
+    
+    </script>
+</body>
+</html>

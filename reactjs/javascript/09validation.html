@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" id="name" name="name" onkeydown="namevalid(this,'nameError')">
+        
+            <span id="nameError"></span>
+        </td>
+        </tr>
+        <tr>
+         <td>Email:</td>
+         <td><input type="text" id="email" name="email" onkeydown="emailvalid(this,'emailError')">
+            <span id="emailError"></span>
+        </td>
+       </tr>
+       <tr>
+         <td>password:</td>
+         <td><input type="text" id="pwd" name="pwd" onkeydown="passwordvalid(this,'pwdErrror')">
+            <span id="pwdErrror"></span>
+        </td>
+       </tr>
+       <tr>
+         <td>number:</td>
+         <td><input type="text" id="number" name="number" onkeydown="mobilevalid(this,'nbError')">
+            <span id="nbError"></span>
+        </td>
+       </tr>
+       <tr>
+         <td style="align-items: center;"><input type="submit" name="" id=""></td>
+       </tr>
+     </table>
+     <script>
+        function namevalid(e,spid)
+        {
+            let name=/^[a-zA-Z]+$/
+            if(name.test(e.value))
+            {
+               document.getElementById(spid).innerHTML=""
+            }
+            else
+            {
+                document.getElementById(spid).style.color="red"
+                document.getElementById(spid).innerHTML="please enter only characters!"   
+            }
+        }
+        
+        function emailvalid(e,spid)
+        {
+            let email=/^([a-z0-9.-_])+@+([a-z0-9.-_])+\.([a-z]{2,3})$/
+            if(email.test(e.value))
+            {
+               document.getElementById(spid).innerHTML=""
+            }
+            else
+            {
+                document.getElementById(spid).style.color="red"
+                document.getElementById(spid).innerHTML="please enter only characters!"   
+            }
+        }
+
+        function passwordvalid(e,spid)
+        {
+            let pwd=/^[a-zA-Z0-9.-_]{3,5}$/
+            if(pwd.test(e.value))
+            {
+               document.getElementById(spid).innerHTML=""
+            }
+            else
+            {
+                document.getElementById(spid).style.color="red"
+                document.getElementById(spid).innerHTML="please enter min 3 max 5 chars!"   
+            }
+        }
+        function mobilevalid(e,spid)
+        {
+            let mbl=/^[0-9]{10}$/
+            if(mbl.test(e.value))
+            {
+               document.getElementById(spid).innerHTML=""
+            }
+            else
+            {
+                document.getElementById(spid).style.color="red"
+                document.getElementById(spid).innerHTML="please enter valid number!"   
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return submitdata()" method="post">
+        <table border="1" text-align="center">
+            <tr>
+                <td>name:</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="text" id="password"></td>
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                <td><input type="text" id="mobile"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button>submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+    function submitdata()
+    {
+        name_tag=document.getElementById('name');
+        email_tag=document.getElementById('email');
+        password_tag=document.getElementById('password');
+        mobile_tag=document.getElementById('mobile');
+
+        if(name_tag.value=="")
+        {
+            alert("please enter name!");
+            document.getElementById('name').focus();
+            return false;
+        }
+        if(email_tag.value=="")
+        {
+            alert("please enter email!");
+            document.getElementById('email').focus();
+            return false;
+        }
+        if(password_tag.value=="")
+        {
+            alert("please enter password!");
+            document.getElementById('password').focus();
+            return false;
+        }
+        if(mobile_tag.value=="")
+        {
+            alert("please enter mobile!");
+            document.getElementById('mobile').focus();
+            return false;
+        }
+    }
+
+
+</script>
+</html>

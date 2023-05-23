@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         button
+{
+    padding: 3px 20px;
+    border-radius: 30px;
+    background-color: brown;
+    border: none;
+    margin: 35px 10px;
+}
+ button a{
+    display: flex;
+}
+ button i, button p{
+    color:white ;
+    font-size: 15px;
+    padding-top: 9px;
+}
+    </style>
+</head>
+<body>
+    <button id="btn">
+        <a href="">
+            <i class="fa fa-print" aria-hidden="true"></i>
+            <p id="para">Print Resume</p>
+        </a>
+    </button>
+    <script>
+        btn_tag=document.getElementById('btn')
+        console.log(btn_tag)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" id="name" name="name" onfocus="test(this,huh)">
+        
+            <span id="huh"></span>
+        </td>
+        </tr>
+        <tr>
+         <td>Email:</td>
+         <td><input type="text" id="email" name="email" onblur="test(this,huh)>
+            <span id="huh"></span>
+        </td>
+       </tr>
+       <tr>
+         <td>password:</td>
+         <td><input type="text" id="pwd" name="pwd" onblur="test(this,huh)>
+            <span id="huh"></span>
+        </td>
+       </tr>
+       <tr>
+         <td>number:</td>
+         <td><input type="text" id="number" name="number" onblur="test(this,huh)>
+            <span id="huh"></span>
+        </td>
+       </tr>
+       <tr>
+         <td align="center"><input type="submit" name="" id=""></td>
+       </tr>
+     </table>
+</body>
+<script>
+    function test(e,spid)
+    {
+        if(e.value= "")
+        {
+            document.getElementById(spid).style.color="red";
+            document.getElementById(spid).innerHTML="please enter data! ";
+        }
+    }
+</script>
+</html>

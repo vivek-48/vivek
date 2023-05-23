@@ -1,0 +1,299 @@
+@media(max-width:1190px)
+{
+    .nav .text .fa-envelope-o{margin: 5px 0 0 70px;}
+    .header .logo{width: 30%;}
+    .logo img{margin: 15px auto;}
+    .header .menu{width: 70%;}
+    .menu a{padding: 0 0 0 15px;}
+    .prepare .amazed h1{padding: 40px 0 0 40px;}
+    .prepare .amazed p{padding: 10px 0 0 40px;}
+    .prepare .buy button{margin: 55px 0 0 80px ;}
+    .popular .package{width: 100%;left: 0;height: 650px;}
+    .popular .package .txt {left: 330px;}
+    .popular .package p {padding: 30px 0 0 380px;}
+    .package .View{width: 90%;margin: 20px auto;}
+    .View .paris .date i{padding: 5px 0 0 10px;}
+    .View .paris .trans{height: 30px;width: 95%;margin: 10px;}
+    .View .paris .trans1{height: 30px;width: 95%;margin: 10px;}
+    .View .paris .trans p{padding: 0;}
+    .View .paris .trans i {padding: 8px 0 0 10px;}
+    .View .paris .trans1 i {padding: 8px 0 0 10px;}
+
+    .happy{grid-template-columns: 7fr 3fr;}
+    .happy .blank{display: none;}
+    .happy .blank1{display: none;}
+    .client .text{height: 170px;}
+    .client  .text1 .text2 p {padding: 10px 0 0 10px;}
+
+
+    .trip{grid-template-columns:  3.3fr 3.3fr 3.3fr ;margin-top: 10px;}
+    .trip .blank{display: none;}
+
+
+    .tour{grid-template-columns:  3.3fr 3.3fr 3.3fr ;margin: 20px 0 0 0;}
+    .tour .blank{display: none;}
+    .tour .reserved{left: 0;width: 100%;}
+}
+
+@media(max-width:900px)
+{
+    .nav .text .fa-envelope-o{margin: 5px 0 0 20px;}
+    .header{height: 120px;display: inline;}
+    .header .logo{width: 40%;height: 50px;margin: 0 auto;}
+    .logo img{margin: 15px 0 0 10px;}
+    .header .menu{width: 100%;height: 70px;margin: 0 auto;}
+    .menu a{padding: 0 0 0 15px;}
+    .prepare .amazed h1{padding: 20px 0 0 10px;}
+    .prepare .amazed p{padding: 10px 0 0 10px;}
+    .prepare .buy button{margin: 35px 0 0 80px ;}
+    .popular .package{width: 100%;left: 0;height: 650px;}
+    .popular .package .txt {left: 330px;}
+    .popular .package p {padding: 30px 0 0 380px;}
+    .package .View{width: 95%;margin: 20px auto;}
+    .View .paris .date i{padding: 5px 0 0 0px;}
+    .View .paris .date p {padding: 5px 0 0 0;}
+    .View .paris .trans{height: 50px;width: 100%;margin: 0px;}
+    .View .paris .trans1{height: 50px;width: 100%;margin: 0px;}
+    .View .paris .trans p{padding: 0;}
+    .View .paris .trans i {padding: 8px 0 0 10px;}
+    .View .paris .trans1 i {padding: 8px 0 0 10px;}
+
+    .happy{grid-template-columns: 7fr 3fr;}
+    .happy .blank{display: none;}
+    .happy .blank1{display: none;}
+    .smile .text1 i{padding: 0;}
+    .smile .text1 p {padding: 0;}
+    .client .text{height: 200px;}
+    .client .say i{padding: 10px 0 0 30px;}
+    .client .say p{padding: 10px 0 0 20px;}
+    .client  .text1 .text2 p {padding: 10px 0 0 10px;}
+
+
+
+    .trip{grid-template-columns:  3.3fr 3.3fr 3.3fr ;margin-top: 10px;}
+    .trip .blank{display: none;}
+
+
+    .rome .rome1 .off i{padding: 60px 0 0 40px;}
+     .rome .rome1 .off1 h2{padding: 10px 0 0 10px;} 
+    .rome .rome1 .off1 p{padding: 5px 0 0 50px;}
+   
+    .san .san1 .off i{padding: 60px  0 0 40px}
+     .san .san1 .off1 h2{padding: 10px 0 0 30px} 
+    .san .san1 .off1 p{padding: 5px 0 0 50px}
+
+
+    .tour{grid-template-columns:  3.3fr 3.3fr 3.3fr ;margin: 20px 0 0 0;}
+    .post .text .mix i{line-height: 20px;}
+    .post .text .mix p{line-height: 10px;}
+    .post .text .mix h4{line-height: 20px;}
+    .tour .blank{display: none;}
+    .tour .reserved{left: 0;}
+    .tour .reserved p {padding: 10px 0 0 200px;}
+}
+
+
+@media(max-width:750px)
+{
+    .main{height: 500px;width: 100%}
+    .main img{height: 300px;width: 100%;margin: 200px 0 0 0}
+    .main .nav{height: 60px;width:100%;background: #abb8c3;grid-template-columns: 1fr}
+    .nav .icon{margin: 0 auto;width: 50%}
+    .icon .facebook{margin: 5px 0 0 110px;}
+
+
+    .icon p{display: none;}
+    .icon .search{display: none;padding: 0;}
+    .nav .text{width: 70%;margin: 0 auto;}
+    .nav .text .fa-envelope-o { margin: 5px 0 0 20px;}
+    .header{top: 60px;height: 140px;background: #424242;width: 100%}
+    .header .menu{display: none;}
+    .header .logo{height: 140px;width: 60%;margin: 0 auto;}
+    .logo select{display: block;height: 30px;width:350px;margin:20px 0 0 40px }
+   
+    .prepare{height: 230px;grid-template-columns: 1fr}
+    .prepare .amazed h1{padding: 20px auto;}
+    .prepare .amazed p {padding: 10px auto;}
+    .prepare .buy{height: 70px;margin: 0 auto;}
+    .prepare .buy button{margin:20px auto;}
+
+    .popular{height: 1850px}
+    .popular .package{height: 1800px;width: 90%;left:35px }
+    .popular .package .txt {left: 180px;background:transparent;}
+    .popular .package p{padding: 20px 0 0 230px;}
+    .package .View{height: 1730px;grid-template-columns: 1fr;gap: 40px;width: 100%;}
+    .View .paris{margin: 20px auto; }
+    .View .paris .trans{height: 30px;width: 80%;margin: 15px;}
+    .View .paris .trans1{height: 30px;width: 80%;margin:15px;}
+    .View .paris .trans p{padding: 0 0 0 10px ;}
+    .View .paris .trans i {padding: 8px 0 0 10px;}
+    .View .paris .date i{padding: 5px 0 0 10px;}
+    .View .paris .date p {padding: 5px 0 0 10px;}
+
+    .happy{height: 1250px;grid-template-columns: 1fr;border:none;border-top:1px solid;border-bottom:1px solid; }
+    .happy .blank{display: none;}
+    .happier .heart{height: 80px;width: 60%;margin: 0px auto;}
+    .happier p{font-size:30px;padding:0px }
+    .happier .smile{height: 750px;display: block;}
+    .happier .smile .smile1{width: 50%;margin: 0 auto;}
+    .smile .smile1 img{height: 300px;width: 100%;margin: 0px auto;}
+    .smile .text{width: 50%;height: 300px;margin: 0px auto;}
+    .happy .client{height: 300px;width: 100%;margin: 350px 0 0 0}
+    .client .text{margin: 20px 0 0 15px;margin-top: -10px}
+    .client .text p {margin-top: 0px}
+    .smile .text .text1{height: 50px}
+    .smile .text1 i {padding: 0}
+    .smile .text1 p {padding: 0}
+    .smile .text1 a {line-height: 0px}
+    .happy .client{margin-top:420px;height:400px }
+    .client .say{width: 50%;margin: 0 auto;}
+    .client .say p{padding: 20px 0 0 10px}
+    .client .text{width: 50%;margin: 40px auto;height: 180px}
+    .client  .text1{width: 50%;margin: -40px auto;height: 70px}
+    .client  .text1 .text2 p {padding: 10px 0 0 30px}
+
+
+    .trip{height: 1750px;grid-template-columns: 1fr}
+    .trip .blank{display: none;}
+    .featured .video{width: 50%;margin: 0 auto;}
+    .featured .video i{padding: 30px 0 0 10px;}
+    .featured .video p{padding: 30px 0 0 20px;}
+    .featured .youtube{width: 50%;margin: 0 auto;}
+    .youtube .iframe{width: 50%;margin: 0px 0 0 30px}
+    .featured .text {width: 50%;margin: 0 auto;}
+    .text span{margin: 50px 0 0 10px}
+    .text p {margin: 30px 0 0 10px}
+    .trip .tips{width: 50%;margin: 0 auto;height: 680px}
+    .tips .video i{padding: 30px 0 0 10px}
+    .tips .video p{padding: 30px 0 0 10px}
+    .tips .post{margin: 20px 0 0 0px;width: 100%;height: 110px}
+    .trip .search{width: 50%;margin: 180px auto;}
+    .search .video i{padding: 20px 0 0 10px}
+    .search .video p{padding: 20px 0 0 10px}
+    .search .table{width: 100%;margin: 0px 0 0 0px}
+    .search input{margin: 20px 0 0 5px;width:90%}
+    .search select{margin: 20px 0 0 5px;width:90%}
+    .search button{margin: 20px 0 0 5px;width: 220px}
+    
+
+    .tour{height: 1730px;grid-template-columns: 1fr;margin: 0}
+    .tour .blank{display: none;}
+    .tour .package{height: 400px;width: 60%;margin: 0 auto;}
+    .tour .package img{width: 70%;height: 40px;margin: 60px 0 0 50px}
+    .tour .package p{margin: 40px 0 0 40px}
+    .tour .minute{height: 500px;width: 50%;margin: -90px auto;}
+    .minute .video p {padding: 40px 0 0 0px}
+    .minute .post{margin: 20px 0 0 0px;width: 100%}
+    .post .img{margin: 0;width: 25%}
+    .post .text{width: 75%}
+    .tour .offer{height: 500px;width: 50%;margin: -90px auto;}
+    .tour .offer .rome{width: 90%;margin:20px 0 0 10px ;}
+    .rome .rome1 .off i{padding: 60px 0 0 70px;}
+     .rome .rome1 .off1 h2{padding: 10px 0 0 50px;} 
+    .rome .rome1 .off1 p{padding: 5px 0 0 90px;}
+    .tour .offer .san{width: 90%;margin:20px 0 0 10px;}
+    .san .san1 .off i{padding: 60px  0 0 70px}
+     .san .san1 .off1 h2{padding: 10px 0 0 90px} 
+    .san .san1 .off1 p{padding: 5px 0 0 110px}
+
+    .tour .reserved{top:1450px;left: 180px;width: 50%;height: 80px}
+    .tour .reserved p{padding: 0;}
+}
+
+
+@media(max-width:500px)
+{
+	.main{height: 500px;width: 100%}
+	.main img{height: 300px;width: 100%;margin: 200px 0 0 0}
+    .main .nav{height: 60px;width:100%;background: #abb8c3;grid-template-columns: 1fr}
+    .nav .icon{padding: 0 0 0 0px;width: 100%;}
+    .icon .facebook{margin: 5px 0 0 140px;}
+    .icon p{display: none;}
+    .icon .search{display: none;}
+    .nav .text{width: 100%;}
+    .nav .text .fa-envelope-o { margin: 5px 0 0 30px;}
+    .header{top: 60px;height: 140px;background: #424242;width: 100%}
+    .header .menu{display: none;}
+    .header .logo{height: 140px;width: 100%;}
+    .logo img{margin: 15px 0 0 120px;}
+    .logo select{display: block;height: 30px;width:350px;margin:20px auto }
+
+
+    .prepare{height: 230px;grid-template-columns: 1fr}
+    .prepare .amazed h1{padding: 20px 0 0 50px;}
+    .prepare .amazed p {padding: 10px 0 0 50px;}
+    .prepare .buy{height: 70px}
+    .prepare .buy button{margin:20px auto }
+    .popular{height: 1850px}
+    .popular .package{height: 1800px;width: 90%;left:25px }
+    .popular .package .txt {left: 70px;background:transparent;}
+    .popular .package p{padding: 20px 0 0 120px}
+    .package .View{height: 1700px;grid-template-columns: 1fr;gap: 40px;width: 100%}
+    .View .paris{margin: 0 20px 0 10px }
+
+
+    .happy{height: 1250px;grid-template-columns: 1fr;border:none;border-top:1px solid;border-bottom:1px solid; }
+    .happy .blank{display: none;}
+    .happy .blank1{display: none;}
+    .happier .heart{height: 80px;width: 100%}
+    .happier p{font-size:30px;padding:15px 0 0 20px }
+    .happier .smile{height: 800px;display: block;}
+    .happier .smile .smile1{width: 100%}
+    .smile .smile1 img{height: 300px;width: 95%;padding: 10px 0 0 20px}
+    .smile .text{width: 100%;height: 300px}
+    .smile .text .text1{width: 80%;margin: 10px 0 0 50px}
+    .smile .text .text1 i{padding: 0}
+    .smile .text .text1 p{padding: 10px 0 0 5px}
+    .happy .client{height: 400px;width: 100%;margin: 430px 0 0 0}
+    .client .say{width: 100%;}
+    .client .say i {padding:20px 0 0 50px;}
+    .client .text{margin: 30px auto;width: 80%;}
+    .client .text p {margin-top: 5px}
+    .client  .text1{width: 80%;margin: -30px auto;}
+
+
+    .trip{height: 1600px;grid-template-columns: 1fr;margin-top: 0px;}
+    .trip .blank{display: none;}
+    .featured .video{width: 100%;}
+    .featured .video i{padding: 32px 0 0 50px;}
+    .featured .youtube{width: 80%;}
+    .youtube .iframe{width: 80%;margin: 0px 0 0 30px}
+    .featured .text{width: 80%;margin: 0 auto;}
+    .text span{margin: 50px }
+    .text p {margin: 40px}
+    .trip .tips{width: 80%;margin: 0 auto;height: 550px;}
+    .tips .video i{padding: 33px 0 0 40px}
+    .tips .post{margin: 20px 0 0 0px;width: 100%;height: 80px;}
+    .post .img{width: 30%;}
+    .post .img img{margin: 5px ;}
+    .post .text{width: 100%;}
+    .trip .search{width: 80%;margin: 50px auto;}
+    .search .video i{padding: 20px 0 0 50px}
+    .search .video p{padding: 20px 0 0 10px}
+    .search .table{width: 100%;margin: 0px 0 0 0px}
+    .search input{margin: 20px 0 0 5px;width:260px}
+    .search select{margin: 20px 0 0 5px;width:260px}
+    .search button{margin: 20px 0 0 5px;width: 260px}
+    
+    .tour{height: 1500px;grid-template-columns: 1fr;margin: 0}
+    .tour .blank{display: none;}
+    .tour .package{height: 380px;width: 80%;}
+    .tour .package img{width: 70%;height: 40px;margin: 60px 0 0 50px}
+    .tour .package p{margin: 40px 0 0 40px}
+    .tour .minute{margin-top: -120px;height: 500px;width: 80%;}
+    .minute .video p {padding: 40px 0 0 40px}
+    .minute .post{margin: 20px 0 0 0px}
+    .post .text{width: 70%}
+
+    .tour .offer{margin: -120px auto;height:490px;width: 80%; }
+    .tour .offer .rome{width: 90%;margin:20px 0 0 20px }
+    .rome .rome1 .off i{padding: 60px  0 0 60px}
+     .rome .rome1 .off1 h2{padding: 10px 0 0 50px} 
+    .rome .rome1 .off1 p{padding: 5px 0 0 80px}
+    .tour .offer .san{width: 90%;margin:20px 0 0 20px}
+    .san .san1 .off i{padding: 60px  0 0 60px}
+     .san .san1 .off1 h2{padding: 10px 0 0 80px} 
+    .san .san1 .off1 p{padding: 5px 0 0 90px}
+    .tour .reserved{top:1380px;left: 50px;width: 80%}
+    .tour .reserved p{padding: 10px 0 0 30px}
+}
