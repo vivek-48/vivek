@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment</title>
+    <style>
+    td{
+        text-align:center;
+    }
+    iframe{
+        width:100%;
+        height:300px;
+    }
+    </style>
+
+</head>
+<body>
+
+  <table border="1" width="80%" align="center">
+    <tr >
+    <td rowspan="2">Home</td>
+    <td rowspan="2">about</td>
+    <td rowspan="2">Contact</td>
+    <td rowspan="2">help</td>
+    <td rowspan="2">store</td>
+    <td>download</td>
+    <tr>
+       <td>app</td>
+    </tr>
+    </tr>
+
+
+    <tr>
+    <td colspan="6">
+    <img src="images.jpg" width="100%" height="300px"/>
+    </td>
+
+    </tr>
+
+
+    <tr>
+    <td colspan="6">Contact-us-page</td>
+    </tr>
+
+
+    <tr>
+    <td colspan="3">first-name<input type="text" placeholder="Enter your name"/></td>
+    <td colspan="3">last-name<input type="text" placeholder="Enter your name"/></td>
+
+    <tr>
+    <td colspan="3">Email-id<input type="text" placeholder="Enter your email-id"/></td>
+    <td colspan="3">Phone-no<input type="text" placeholder="Enter your phone number"/></td>
+    </tr>
+
+    <tr>
+    <td colspan="3">city
+   <select id="cars">
+  <option >Ahmedabad</option>
+  <option >Rajkot</option>
+  <option >Morbi</option>
+  <option  selected>Surat</option>
+</select>
+    </td>
+    <td colspan="3" >Gender: MALE<input type="radio"/> FEMALE<input type="radio"/></td>
+    </tr>
+    </tr>
+
+    <tr>
+    <td colspan="3">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.4292270536384!2d72.51290907352309!3d23.04472027915819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b767b0a48ed%3A0x713f82e619ac7868!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1688387582836!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="300px" ></iframe>
+    
+   </td>
+    <td colspan="3">
+    <iframe src="https://youtu.be/sGGDA_gGXmI">
+</iframe>
+    
+    </td>
+    </tr>
+
+  </table>
+
+
+  <input id="pass" type="password">
+  <input id="check" type="checkbox">
+
+  <script>
+  check.onclick=togglepassword;
+  function togglepassword(){
+    if(check.checked) pass.type ="text";
+    else pass.type = "password";
+  }
+  </script>
+
+
+</body>
+</html>

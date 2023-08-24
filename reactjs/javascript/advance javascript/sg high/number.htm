@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a="55";
+        console.log(a+10);
+
+        let num = Number(a)
+        console.log(num+10);
+    
+        var b=true;
+         let bool=Number(b)
+         console.log(bool);    
+
+         var c="99 88";
+         let boo=Number(c)
+         console.log(boo); 
+
+
+         var d="99.8877"
+          var nu=parseInt(d)
+          var numb=parseFloat(d)
+          console.log(nu);
+          console.log(numb);
+
+
+          var z=  -15.50;
+          var lets=Number.isFinite(z)
+          console.log(lets);
+
+          var x=  1550;
+          var letst=Number.isInteger(x)
+          console.log(letst);
+
+
+          var s=5.67890 ;
+          var strt=s.toFixed(2);
+          console.log(strt);
+
+          var t=5.67890 ;
+          var str=t.toPrecision(2);
+          console.log(str);
+
+
+          //math function
+
+          var e1=Math.ceil(2.35)
+          var e2=Math.ceil(-2.35)
+          document.write(e1+"</br>") //3
+          document.write(e2)// -2
+        
+          var f1=Math.floor(0.60)
+          document.write("</br>"+f1)
+          
+          var f2=Math.floor(-1.60)
+          document.write(f2+"</br>")
+
+          var g=Math.round(4.59)
+          document.write(g)
+
+          var h=Math.trunc(8.69)
+          document.write(h+"</br>")
+
+          var e=Math.max(25,34,45,56,67)
+          document.write(e)
+          var e1=Math.min(25,34,45,56,67)
+          document.write(e1+"</br>")
+
+          //sqrt=square root
+          //cbrt=cubic root(3 var multiply )
+
+          var f=Math.sqrt(25)
+          document.write(f)
+
+          var f1=Math.cbrt(125) 
+          document.write(f1+"</br>")
+
+          var i=Math.pow(4,5)  //(4*4*4*4*4)
+          document.write(i+"</br>")
+
+          var i1=  Math.floor(Math.random() *10)+1
+          document.write(i1+"</br>")
+
+
+          //abs=absolute value
+
+          var j=Math.abs(5.25)
+          document.write(j+"</br>")
+
+          //pi
+
+          var j1=Math.PI
+          document.write(j1)
+
+
+    </script>
+</body>
+</html>

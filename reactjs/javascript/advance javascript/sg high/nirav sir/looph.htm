@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[23,34,56,"hello"]
+
+        for(let i=0;i<num.length;i++)
+        {
+            console.log(num[i]);
+        }
+
+        num.forEach((element)=>{
+            console.log(element);
+        })
+
+        //array.from this is use for object convert into array
+        let n="hello";
+        let na=Array.from(n);
+        console.log(na);
+
+
+        //for..of loop
+        for(let i of num)
+        {
+            console.log(i);
+        }
+   
+
+        // for...in loop index mate
+        for(let i in num)
+        {
+            console.log(num[i]);
+        }
+    </script>
+</body>
+</html>

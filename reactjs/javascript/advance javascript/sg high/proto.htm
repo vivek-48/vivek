@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>prototype</h1>
+    <script>
+        let a={
+            name1:'vivek',
+            language:'javascript',
+            run: ()=>{
+              console.log('a calling');
+            }
+
+        }
+
+        console.log(a);
+        console.log(toString(a.name1));
+
+        let p={
+            run: ()=>{
+              console.log('p calling');
+            },
+            name:'anyone'
+        }
+        console.log(p);
+        a.__proto__ =p
+
+       let c={
+        name3:'vivek2'
+       }
+       p.__proto__=c
+      
+       a.run()
+       console.log(a.name);
+       console.log(a.name3);
+       console.log(p.name3);
+    </script>
+</body>
+</html>

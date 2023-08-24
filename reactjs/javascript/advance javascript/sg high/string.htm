@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name="vivek"
+        console.log(name.indexOf("e"));
+        console.log(name.indexOf("E"));//-1 because that is case-sensytiv 
+        console.log(name.length);
+
+        console.log(name.startsWith("bi"));//false
+        console.log(name.endsWith("ek"));//true
+
+        console.log(name.toUpperCase());
+        console.log(name.toLowerCase());
+
+        console.log(name.substring(2, 4)); // "ve"
+        console.log(name.substring(4, 2)); // "ve"
+
+        console.log(name.slice(2,4));//ve
+        console.log(name.slice(4,2));//""
+        console.log(name.replace("vi","vek"));
+
+        let friend="        meena     "
+        console.log(friend.concat("is a friend of " + name));
+        console.log(friend.trim());
+
+        let fr="shivika"
+        // console.log(fr[0]);
+        // console.log(fr[1]);
+        // console.log(fr[2]);
+        // console.log(fr[3]);
+
+        for(let i=0;i<fr.length;i++)
+        {
+            console.log(fr[i]);
+        }
+
+
+        let inc="hello my name is vivek rasadiya"
+        console.log(inc.includes("name"));//true
+        console.log(inc.includes("Name"));//false  because that is case-sensytiv 
+        
+    </script>
+</body>
+</html>

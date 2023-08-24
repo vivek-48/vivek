@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myfruits(values){
+            let nextIndex=0;
+
+            return {
+                find:function(){
+                    if(nextIndex<values.length)
+            {
+                
+                return{
+                       value:values[nextIndex++],
+                       done :false
+                }
+            }
+            else
+            {
+                return{
+                    done:true
+                }
+            }
+                }
+            }
+        }
+
+        let myarra=['apples','bhindi','banana','graves']
+
+        const fruits=myfruits(myarra);
+        console.log(fruits.find().value);
+        console.log(fruits.find().value);
+        console.log(fruits.find().value);
+        console.log(fruits.find().value);
+        console.log(fruits.find().value);
+       
+    </script>
+</body>
+</html>

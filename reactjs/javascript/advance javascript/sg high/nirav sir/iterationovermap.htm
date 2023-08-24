@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let receipe=new Map([
+            ['name','yasmin'],['age',25],['job','teacher']
+        ])
+        console.log(receipe.keys())
+
+        for(let vegetable of receipe.values())
+        {
+            console.log(vegetable);
+        }
+        for(let vegetable of receipe)
+        {
+            console.log('keys is '+vegetable[0] +' value is '+vegetable[1]);
+        }
+
+        receipe.forEach((x,y)=>{
+          console.log('value is ',x , 'key is ',y);
+        })
+
+
+        const array1 = [1, 4, 9, 16];
+        // pass a function to map
+        let ForeachRes = array1.forEach(element => {
+            console.log(element);
+            return "test"
+        });
+        console.log(ForeachRes);
+        let MapResponse = array1.map((data)=>{
+            console.log(data);
+            return data*2
+        })
+        console.log(MapResponse);
+    </script>
+</body>
+</html>

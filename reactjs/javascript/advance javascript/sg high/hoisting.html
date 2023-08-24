@@ -1,0 +1,40 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+
+
+let value=null;
+let username=(value ?? "nhaikhabar")
+console.log(username)
+
+if(value == "undefined")
+{
+    console.log("if part")
+}
+else{
+    console.log("else part")
+}
+
+alert(value ?? "another part")
+let n=55;
+alert((n!==55)?"true":"false")
+
+function addition() {
+            let a = 50;
+            let b = 50;
+            return a + b
+        }
+        console.log(addition());
+        
+         let additionarrow = () => "testing"
+        // let additionarrow = () => { return"testing"}
+       // let additionarrow = () => 50 + 50
+        let additionarrowWithRet = () => { a = 50; b = 50; return a + b}
+        console.log(additionarrowWithRet);
+        console.log(additionarrow());
+</script>
+</body>
+</html>

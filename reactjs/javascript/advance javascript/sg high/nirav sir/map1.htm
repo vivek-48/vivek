@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+           <h1> Map and Set</h1>
+           <p> Till now, we’ve learned about the following complex data structures:</p>
+
+            <pre>Objects are used for storing keyed collections.
+                Arrays are used for storing ordered collections.
+                But that’s not enough for real life. That’s why Map and Set also exist.</pre>
+
+           <h1> Map</h1>
+           <pre> Map is a collection of keyed data items, just like an Object. But the main difference is that Map allows keys of any type.
+
+            Methods and properties are:</pre>
+
+           <ul>
+            <li> new Map() – creates the map.</li>
+            <li>map.set(key, value) – stores the value by the key.</li>
+           <li> map.get(key) – returns the value by the key, undefined if key doesn’t exist in map.</li>
+           <li> map.has(key) – returns true if the key exists, false otherwise.</li>
+           <li> map.delete(key) – removes the element (the key/value pair) by the key.</li>
+           <li> map.clear() – removes everything from the map.</li>
+           <li> map.size – returns the current element count.</li>
+           </ul>
+
+
+           <h1> Set</h1>
+           
+           <pre> A Set is a special type collection – “set of values” (without keys), where each value may occur only once.
+
+            Its main methods are:</pre>
+
+            <ul>
+                <li> new Set([iterable]) – creates the set, and if an iterable object is provided (usually an array), copies values from it into the set.</li>
+            <li> set.add(value) – adds a value, returns the set itself.</li>
+            <li> set.delete(value) – removes the value, returns true if value existed at the moment of the call, otherwise false.</li>
+            <li> set.has(value) – returns true if the value exists in the set, otherwise false.</li>
+            <li> set.clear() – removes everything from the set.</li>
+            <li> set.size – is the elements count.</li>
+            </ul>
+    <script>
+        // const myMap =new Map();
+        // const key1='string',key2={},key3=function(){};
+        
+        // //setting up values
+        // myMap.set(key1,'this is my string')
+        // myMap.set(key2,'this is my blank obj')
+        // myMap.set(key3,'this is my empty function')
+        
+        // console.log(myMap);
+       
+        // //getting the valuues from the map using get method
+        // let n=myMap.get(key2);
+        // console.log(n);
+
+        // let h=myMap.has(key3);
+        // console.log(h);
+
+        // let d=myMap.delete(key3);
+        // console.log(d);
+
+        // // let c=myMap.clear();
+        // // console.log(c);
+        // console.log(myMap);
+
+
+        // console.log(myMap.size);
+
+ 
+        // // you can loop using for..of to gets and keys
+        // for(let [keys,values] of myMap)
+        // {
+        //     console.log(keys,values);
+        // }
+
+        // //only keys
+        // for(let keys of myMap)
+        // {
+        //     console.log('key is',keys);
+        // }
+
+        // //only values
+        // for(let values of myMap)
+        // {
+        //     console.log('value is',values);
+        // }
+
+        // // you can loop using for..each to gets and keys
+
+        // myMap.forEach((values,keys)=>{
+        //     console.log('foreach value',values);
+        //     console.log('foreach keys',keys);
+        // })
+
+
+
+        const set=new Set();
+
+        let key1="string",key2={},key3=function(){};
+
+        const john={name:'john'}
+        set.add(key1);
+        set.add(key2);
+        set.add(key3);
+        set.add(key1);
+        set.add(john)
+
+        console.log(set);
+
+
+    </script>
+</body>
+</html>

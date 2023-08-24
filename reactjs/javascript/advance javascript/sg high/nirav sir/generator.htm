@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>they allow you to define an iterative algorithm by writing a single function whose execution is not continuous</h1>
+    
+    <h1 style="color: red;">તેઓ તમને એક ફંક્શન લખીને પુનરાવર્તિત અલ્ગોરિધમ વ્યાખ્યાયિત કરવાની મંજૂરી આપે છે જેનો અમલ સતત નથી</h1>
+    <script>
+        function* genera(){
+            let i=0;
+
+            // yield 1;
+            // yield 2;
+            // yield 3;
+            // yield 4;
+            // yield 5;
+            // yield 6 ;
+
+            while(true){
+                yield i++;
+            }
+            
+        }
+
+        let gen = genera();
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+    </script>
+</body>
+</html>
